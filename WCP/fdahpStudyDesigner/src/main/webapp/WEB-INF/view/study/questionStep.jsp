@@ -1700,7 +1700,7 @@ function isNumberKey(evt)
 				                        <select class="selectpicker conditionalBranchingRequired" name="questionConditionBranchBoList[0].inputTypeValue" id="inputTypeValueId0" index="1" count="0" onchange='selectFunction(this);'>
 				                           <option value=""  selected>Select</option>
 				                           <option value=">" ${questionnairesStepsBo.questionConditionBranchBoList[0].inputTypeValue eq ">" ? 'selected' :''}>&gt;</option>
-				                           <option value="<" ${questionnairesStepsBo.questionConditionBranchBoList[0].inputTypeValue eq "<" ? 'selected' :''}>&lt;</option>
+				                           <option value=">" ${questionnairesStepsBo.questionConditionBranchBoList[0].inputTypeValue eq "<" ? 'selected' :''}>&lt;</option>
 				                           <option value="==" ${questionnairesStepsBo.questionConditionBranchBoList[0].inputTypeValue eq "==" ? 'selected' :''}>&equals;</option>
 				                           <option value="!=" ${questionnairesStepsBo.questionConditionBranchBoList[0].inputTypeValue eq "!=" ? 'selected' :''}>!=</option>
 				                           <%-- <option value="&&" ${questionnairesStepsBo.questionConditionBranchBoList[0].inputTypeValue eq "&&" ? 'selected' :''}>AND</option>
@@ -1770,7 +1770,7 @@ function isNumberKey(evt)
 					                             <%-- <c:if test="${status.index lt 2}"></c:if> --%>
 					                           	 <c:when test="${status.index le 2 && (questionnairesStepsBo.questionConditionBranchBoList[0].inputTypeValue eq '&&' || questionnairesStepsBo.questionConditionBranchBoList[0].inputTypeValue eq '||' )}">
 					                           	 	 <option value=">" ${questionConditionBranchBo.inputTypeValue eq ">" ? 'selected' :''}>&gt;</option>
-					                           		 <option value="<" ${questionConditionBranchBo.inputTypeValue eq "<" ? 'selected' :''}>&lt;</option> 
+					                           	 	 <option value=">" ${questionConditionBranchBo.inputTypeValue eq "<" ? 'selected' :''}>&lt;</option>
 					                           		 <option value="=" ${questionConditionBranchBo.inputTypeValue eq "=" ? 'selected' :''}>&equals;</option>
 					                           		 <option value="!=" ${questionConditionBranchBo.inputTypeValue eq "!=" ? 'selected' :''}>!=</option>
 					                           	 </c:when>

@@ -26,7 +26,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/fmt" prefix = "fmt" %>
 <jsp:useBean id="date" class="java.util.Date" />
-<c:set var="tz" value="America/Los_Angeles"/>
+<c:set var="tz" value="Europe/Berlin"/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
