@@ -62,7 +62,7 @@ public class ActiveTaskCustomScheduleBo implements Serializable {
 
 	@Column(name = "is_used")
 	@Type(type = "yes_no")
-	private Boolean used = false;
+	private boolean used = false;
 
 	public ActiveTaskCustomScheduleBo() {
 		// Do nothing
@@ -91,7 +91,7 @@ public class ActiveTaskCustomScheduleBo implements Serializable {
 	/**
 	 * @return the used
 	 */
-	public Boolean isUsed() {
+	public boolean isUsed() {
 		return used;
 	}
 
@@ -119,7 +119,7 @@ public class ActiveTaskCustomScheduleBo implements Serializable {
 	 * @param used
 	 *            the used to set
 	 */
-	public void setUsed(Boolean used) {
+	public void setUsed(boolean used) {
 		this.used = used;
 	}
 

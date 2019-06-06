@@ -64,10 +64,10 @@ public class UserBO implements Serializable {
 	private String accessCode;
 
 	@Column(name = "accountNonExpired", length = 1)
-	private Boolean accountNonExpired;
+	private boolean accountNonExpired;
 
 	@Column(name = "accountNonLocked", length = 1)
-	private Boolean accountNonLocked;
+	private boolean accountNonLocked;
 
 	@Column(name = "created_by")
 	private Integer createdBy;
@@ -76,20 +76,20 @@ public class UserBO implements Serializable {
 	private String createdOn;
 
 	@Column(name = "credentialsNonExpired", length = 1)
-	private Boolean credentialsNonExpired;
+	private boolean credentialsNonExpired;
 
 	@Column(name = "email_changed", columnDefinition = "TINYINT(1)")
-	private Boolean emailChanged = false;
+	private boolean emailChanged = false;
 
 	@Column(name = "status", length = 1)
-	private Boolean enabled;
+	private boolean enabled;
 
 	@Column(name = "first_name")
 	private String firstName;
 
 	@Column(name = "force_logout")
 	@Type(type = "yes_no")
-	private Boolean forceLogout = false;
+	private boolean forceLogout = false;
 
 	@Column(name = "last_name")
 	private String lastName;
@@ -124,7 +124,7 @@ public class UserBO implements Serializable {
 	private String tokenExpiryDate;
 
 	@Column(name = "token_used")
-	private Boolean tokenUsed;
+	private boolean tokenUsed;
 
 	@Column(name = "email")
 	private String userEmail;
@@ -158,7 +158,7 @@ public class UserBO implements Serializable {
 		return createdOn;
 	}
 
-	public Boolean getEmailChanged() {
+	public boolean getEmailChanged() {
 		return emailChanged;
 	}
 
@@ -228,7 +228,7 @@ public class UserBO implements Serializable {
 	/**
 	 * @return the tokenUsed
 	 */
-	public Boolean getTokenUsed() {
+	public boolean getTokenUsed() {
 		return tokenUsed;
 	}
 
@@ -255,29 +255,29 @@ public class UserBO implements Serializable {
 	/**
 	 * @return the accountNonExpired
 	 */
-	public Boolean isAccountNonExpired() {
+	public boolean isAccountNonExpired() {
 		return accountNonExpired;
 	}
 
 	/**
 	 * @return the accountNonLocked
 	 */
-	public Boolean isAccountNonLocked() {
+	public boolean isAccountNonLocked() {
 		return accountNonLocked;
 	}
 
 	/**
 	 * @return the credentialsNonExpired
 	 */
-	public Boolean isCredentialsNonExpired() {
+	public boolean isCredentialsNonExpired() {
 		return credentialsNonExpired;
 	}
 
-	public Boolean isEnabled() {
+	public boolean isEnabled() {
 		return enabled;
 	}
 
-	public Boolean isForceLogout() {
+	public boolean isForceLogout() {
 		return forceLogout;
 	}
 
@@ -293,7 +293,7 @@ public class UserBO implements Serializable {
 	 * @param accountNonExpired
 	 *            the accountNonExpired to set
 	 */
-	public void setAccountNonExpired(Boolean accountNonExpired) {
+	public void setAccountNonExpired(boolean accountNonExpired) {
 		this.accountNonExpired = accountNonExpired;
 	}
 
@@ -301,7 +301,7 @@ public class UserBO implements Serializable {
 	 * @param accountNonLocked
 	 *            the accountNonLocked to set
 	 */
-	public void setAccountNonLocked(Boolean accountNonLocked) {
+	public void setAccountNonLocked(boolean accountNonLocked) {
 		this.accountNonLocked = accountNonLocked;
 	}
 
@@ -317,15 +317,15 @@ public class UserBO implements Serializable {
 	 * @param credentialsNonExpired
 	 *            the credentialsNonExpired to set
 	 */
-	public void setCredentialsNonExpired(Boolean credentialsNonExpired) {
+	public void setCredentialsNonExpired(boolean credentialsNonExpired) {
 		this.credentialsNonExpired = credentialsNonExpired;
 	}
 
-	public void setEmailChanged(Boolean emailChanged) {
+	public void setEmailChanged(boolean emailChanged) {
 		this.emailChanged = emailChanged;
 	}
 
-	public void setEnabled(Boolean enabled) {
+	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
 	}
 
@@ -333,7 +333,7 @@ public class UserBO implements Serializable {
 		this.firstName = firstName;
 	}
 
-	public void setForceLogout(Boolean forceLogout) {
+	public void setForceLogout(boolean forceLogout) {
 		this.forceLogout = forceLogout;
 	}
 
@@ -405,7 +405,7 @@ public class UserBO implements Serializable {
 	 * @param tokenUsed
 	 *            the tokenUsed to set
 	 */
-	public void setTokenUsed(Boolean tokenUsed) {
+	public void setTokenUsed(boolean tokenUsed) {
 		this.tokenUsed = tokenUsed;
 	}
 

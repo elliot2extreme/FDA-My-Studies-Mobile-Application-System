@@ -49,13 +49,13 @@ public class QuestionResponseTypeMasterInfoBo implements Serializable {
 	private static final long serialVersionUID = -2666359241071290949L;
 
 	@Column(name = "anchor_date")
-	private Boolean anchorDate;
+	private boolean anchorDate;
 
 	@Column(name = "choice_based_branching")
-	private Boolean choinceBasedBraching;
+	private boolean choinceBasedBraching;
 
 	@Column(name = "dashboard_allowed")
-	private Boolean dashBoardAllowed;
+	private boolean dashBoardAllowed;
 
 	@Column(name = "data_type")
 	private String dataType;
@@ -64,10 +64,10 @@ public class QuestionResponseTypeMasterInfoBo implements Serializable {
 	private String description;
 
 	@Column(name = "formula_based_logic")
-	private Boolean formulaBasedLogic;
+	private boolean formulaBasedLogic;
 
 	@Column(name = "healthkit_alternative")
-	private Boolean healthkitAlternative;
+	private boolean healthkitAlternative;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -80,15 +80,15 @@ public class QuestionResponseTypeMasterInfoBo implements Serializable {
 	@Column(name = "response_type_code")
 	private String responseTypeCode;
 
-	public Boolean getAnchorDate() {
+	public boolean getAnchorDate() {
 		return anchorDate;
 	}
 
-	public Boolean getChoinceBasedBraching() {
+	public boolean getChoinceBasedBraching() {
 		return choinceBasedBraching;
 	}
 
-	public Boolean getDashBoardAllowed() {
+	public boolean getDashBoardAllowed() {
 		return dashBoardAllowed;
 	}
 
@@ -100,11 +100,11 @@ public class QuestionResponseTypeMasterInfoBo implements Serializable {
 		return description;
 	}
 
-	public Boolean getFormulaBasedLogic() {
+	public boolean getFormulaBasedLogic() {
 		return formulaBasedLogic;
 	}
 
-	public Boolean getHealthkitAlternative() {
+	public boolean getHealthkitAlternative() {
 		return healthkitAlternative;
 	}
 
@@ -116,15 +116,15 @@ public class QuestionResponseTypeMasterInfoBo implements Serializable {
 		return responseType;
 	}
 
-	public void setAnchorDate(Boolean anchorDate) {
+	public void setAnchorDate(boolean anchorDate) {
 		this.anchorDate = anchorDate;
 	}
 
-	public void setChoinceBasedBraching(Boolean choinceBasedBraching) {
+	public void setChoinceBasedBraching(boolean choinceBasedBraching) {
 		this.choinceBasedBraching = choinceBasedBraching;
 	}
 
-	public void setDashBoardAllowed(Boolean dashBoardAllowed) {
+	public void setDashBoardAllowed(boolean dashBoardAllowed) {
 		this.dashBoardAllowed = dashBoardAllowed;
 	}
 
@@ -136,11 +136,11 @@ public class QuestionResponseTypeMasterInfoBo implements Serializable {
 		this.description = description;
 	}
 
-	public void setFormulaBasedLogic(Boolean formulaBasedLogic) {
+	public void setFormulaBasedLogic(boolean formulaBasedLogic) {
 		this.formulaBasedLogic = formulaBasedLogic;
 	}
 
-	public void setHealthkitAlternative(Boolean healthkitAlternative) {
+	public void setHealthkitAlternative(boolean healthkitAlternative) {
 		this.healthkitAlternative = healthkitAlternative;
 	}
 

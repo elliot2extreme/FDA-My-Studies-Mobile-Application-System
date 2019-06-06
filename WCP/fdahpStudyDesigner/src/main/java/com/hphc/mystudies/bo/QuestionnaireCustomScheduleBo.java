@@ -65,7 +65,7 @@ public class QuestionnaireCustomScheduleBo implements Serializable {
 
 	@Column(name = "is_used")
 	@Type(type = "yes_no")
-	private Boolean used = false;
+	private boolean used = false;
 
 	public String getFrequencyEndDate() {
 		return frequencyEndDate;
@@ -87,7 +87,7 @@ public class QuestionnaireCustomScheduleBo implements Serializable {
 		return questionnairesId;
 	}
 
-	public Boolean isUsed() {
+	public boolean isUsed() {
 		return used;
 	}
 
@@ -111,7 +111,7 @@ public class QuestionnaireCustomScheduleBo implements Serializable {
 		this.questionnairesId = questionnairesId;
 	}
 
-	public void setUsed(Boolean used) {
+	public void setUsed(boolean used) {
 		this.used = used;
 	}
 

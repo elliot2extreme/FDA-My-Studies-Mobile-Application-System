@@ -55,10 +55,10 @@ public class QuestionnaireBo implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Column(name = "active")
-	private Boolean active;
+	private boolean active;
 
 	@Column(name = "branching")
-	private Boolean branching = false;
+	private boolean branching = false;
 
 	@Column(name = "created_by")
 	private Integer createdBy;
@@ -120,7 +120,7 @@ public class QuestionnaireBo implements Serializable {
 	private Integer shortTitleDuplicate = 0;
 
 	@Column(name = "status")
-	private Boolean status;
+	private boolean status;
 
 	@Column(name = "study_id")
 	private Integer studyId;
@@ -140,11 +140,11 @@ public class QuestionnaireBo implements Serializable {
 	@Column(name = "version")
 	private Float version = 0f;
 
-	public Boolean getActive() {
+	public boolean getActive() {
 		return active;
 	}
 
-	public Boolean getBranching() {
+	public boolean getBranching() {
 		return branching;
 	}
 
@@ -224,7 +224,7 @@ public class QuestionnaireBo implements Serializable {
 		return shortTitleDuplicate;
 	}
 
-	public Boolean getStatus() {
+	public boolean getStatus() {
 		return status;
 	}
 
@@ -252,11 +252,11 @@ public class QuestionnaireBo implements Serializable {
 		return version;
 	}
 
-	public void setActive(Boolean active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 
-	public void setBranching(Boolean branching) {
+	public void setBranching(boolean branching) {
 		this.branching = branching;
 	}
 
@@ -339,7 +339,7 @@ public class QuestionnaireBo implements Serializable {
 		this.shortTitleDuplicate = shortTitleDuplicate;
 	}
 
-	public void setStatus(Boolean status) {
+	public void setStatus(boolean status) {
 		this.status = status;
 	}
 

@@ -49,40 +49,40 @@ public class Checklist implements Serializable {
 	private static final long serialVersionUID = 7206666243059395497L;
 
 	@Column(name = "checkbox1", length = 1)
-	private Boolean checkbox1 = false;
+	private boolean checkbox1 = false;
 
 	@Column(name = "checkbox10", length = 1)
-	private Boolean checkbox10 = false;
+	private boolean checkbox10 = false;
 
 	@Column(name = "checkbox11", length = 1)
-	private Boolean checkbox11 = false;
+	private boolean checkbox11 = false;
 
 	@Column(name = "checkbox12", length = 1)
-	private Boolean checkbox12 = false;
+	private boolean checkbox12 = false;
 
 	@Column(name = "checkbox2", length = 1)
-	private Boolean checkbox2 = false;
+	private boolean checkbox2 = false;
 
 	@Column(name = "checkbox3", length = 1)
-	private Boolean checkbox3 = false;
+	private boolean checkbox3 = false;
 
 	@Column(name = "checkbox4", length = 1)
-	private Boolean checkbox4 = false;
+	private boolean checkbox4 = false;
 
 	@Column(name = "checkbox5", length = 1)
-	private Boolean checkbox5 = false;
+	private boolean checkbox5 = false;
 
 	@Column(name = "checkbox6", length = 1)
-	private Boolean checkbox6 = false;
+	private boolean checkbox6 = false;
 
 	@Column(name = "checkbox7", length = 1)
-	private Boolean checkbox7 = false;
+	private boolean checkbox7 = false;
 
 	@Column(name = "checkbox8", length = 1)
-	private Boolean checkbox8 = false;
+	private boolean checkbox8 = false;
 
 	@Column(name = "checkbox9", length = 1)
-	private Boolean checkbox9 = false;
+	private boolean checkbox9 = false;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -135,99 +135,99 @@ public class Checklist implements Serializable {
 		return studyId;
 	}
 
-	public Boolean isCheckbox1() {
+	public boolean isCheckbox1() {
 		return checkbox1;
 	}
 
-	public Boolean isCheckbox10() {
+	public boolean isCheckbox10() {
 		return checkbox10;
 	}
 
-	public Boolean isCheckbox11() {
+	public boolean isCheckbox11() {
 		return checkbox11;
 	}
 
-	public Boolean isCheckbox12() {
+	public boolean isCheckbox12() {
 		return checkbox12;
 	}
 
-	public Boolean isCheckbox2() {
+	public boolean isCheckbox2() {
 		return checkbox2;
 	}
 
-	public Boolean isCheckbox3() {
+	public boolean isCheckbox3() {
 		return checkbox3;
 	}
 
-	public Boolean isCheckbox4() {
+	public boolean isCheckbox4() {
 		return checkbox4;
 	}
 
-	public Boolean isCheckbox5() {
+	public boolean isCheckbox5() {
 		return checkbox5;
 	}
 
-	public Boolean isCheckbox6() {
+	public boolean isCheckbox6() {
 		return checkbox6;
 	}
 
-	public Boolean isCheckbox7() {
+	public boolean isCheckbox7() {
 		return checkbox7;
 	}
 
-	public Boolean isCheckbox8() {
+	public boolean isCheckbox8() {
 		return checkbox8;
 	}
 
-	public Boolean isCheckbox9() {
+	public boolean isCheckbox9() {
 		return checkbox9;
 	}
 
-	public void setCheckbox1(Boolean checkbox1) {
+	public void setCheckbox1(boolean checkbox1) {
 		this.checkbox1 = checkbox1;
 	}
 
-	public void setCheckbox10(Boolean checkbox10) {
+	public void setCheckbox10(boolean checkbox10) {
 		this.checkbox10 = checkbox10;
 	}
 
-	public void setCheckbox11(Boolean checkbox11) {
+	public void setCheckbox11(boolean checkbox11) {
 		this.checkbox11 = checkbox11;
 	}
 
-	public void setCheckbox12(Boolean checkbox12) {
+	public void setCheckbox12(boolean checkbox12) {
 		this.checkbox12 = checkbox12;
 	}
 
-	public void setCheckbox2(Boolean checkbox2) {
+	public void setCheckbox2(boolean checkbox2) {
 		this.checkbox2 = checkbox2;
 	}
 
-	public void setCheckbox3(Boolean checkbox3) {
+	public void setCheckbox3(boolean checkbox3) {
 		this.checkbox3 = checkbox3;
 	}
 
-	public void setCheckbox4(Boolean checkbox4) {
+	public void setCheckbox4(boolean checkbox4) {
 		this.checkbox4 = checkbox4;
 	}
 
-	public void setCheckbox5(Boolean checkbox5) {
+	public void setCheckbox5(boolean checkbox5) {
 		this.checkbox5 = checkbox5;
 	}
 
-	public void setCheckbox6(Boolean checkbox6) {
+	public void setCheckbox6(boolean checkbox6) {
 		this.checkbox6 = checkbox6;
 	}
 
-	public void setCheckbox7(Boolean checkbox7) {
+	public void setCheckbox7(boolean checkbox7) {
 		this.checkbox7 = checkbox7;
 	}
 
-	public void setCheckbox8(Boolean checkbox8) {
+	public void setCheckbox8(boolean checkbox8) {
 		this.checkbox8 = checkbox8;
 	}
 
-	public void setCheckbox9(Boolean checkbox9) {
+	public void setCheckbox9(boolean checkbox9) {
 		this.checkbox9 = checkbox9;
 	}
 

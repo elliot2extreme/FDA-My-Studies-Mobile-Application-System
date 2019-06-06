@@ -54,7 +54,7 @@ public class ResourceBO implements Serializable {
 	private static final long serialVersionUID = -4548349227102496191L;
 
 	@Column(name = "action", length = 1)
-	private Boolean action;
+	private boolean action;
 
 	@Column(name = "created_by")
 	private Integer createdBy;
@@ -89,10 +89,10 @@ public class ResourceBO implements Serializable {
 	private String resourceText;
 
 	@Column(name = "resource_type", length = 1)
-	private Boolean resourceType;
+	private boolean resourceType;
 
 	@Column(name = "resource_visibility", length = 1)
-	private Boolean resourceVisibility;
+	private boolean resourceVisibility;
 
 	@Column(name = "rich_text")
 	private String richText;
@@ -104,16 +104,16 @@ public class ResourceBO implements Serializable {
 	private String startDate;
 
 	@Column(name = "status", length = 1)
-	private Boolean status;
+	private boolean status;
 
 	@Column(name = "study_id")
 	private Integer studyId;
 
 	@Column(name = "study_protocol", length = 1)
-	private Boolean studyProtocol;
+	private boolean studyProtocol;
 
 	@Column(name = "text_or_pdf", length = 1)
-	private Boolean textOrPdf;
+	private boolean textOrPdf;
 
 	@Column(name = "time_period_from_days")
 	private Integer timePeriodFromDays;
@@ -125,10 +125,10 @@ public class ResourceBO implements Serializable {
 	private String title;
 
 	@Column(name = "x_days_sign", length = 1)
-	private Boolean xDaysSign = false;
+	private boolean xDaysSign = false;
 
 	@Column(name = "y_days_sign", length = 1)
-	private Boolean yDaysSign = false;
+	private boolean yDaysSign = false;
 
 	public Integer getCreatedBy() {
 		return createdBy;
@@ -198,39 +198,39 @@ public class ResourceBO implements Serializable {
 		return title;
 	}
 
-	public Boolean isAction() {
+	public boolean isAction() {
 		return action;
 	}
 
-	public Boolean isResourceType() {
+	public boolean isResourceType() {
 		return resourceType;
 	}
 
-	public Boolean isResourceVisibility() {
+	public boolean isResourceVisibility() {
 		return resourceVisibility;
 	}
 
-	public Boolean isStatus() {
+	public boolean isStatus() {
 		return status;
 	}
 
-	public Boolean isStudyProtocol() {
+	public boolean isStudyProtocol() {
 		return studyProtocol;
 	}
 
-	public Boolean isTextOrPdf() {
+	public boolean isTextOrPdf() {
 		return textOrPdf;
 	}
 
-	public Boolean isxDaysSign() {
+	public boolean isxDaysSign() {
 		return xDaysSign;
 	}
 
-	public Boolean isyDaysSign() {
+	public boolean isyDaysSign() {
 		return yDaysSign;
 	}
 
-	public void setAction(Boolean action) {
+	public void setAction(boolean action) {
 		this.action = action;
 	}
 
@@ -274,11 +274,11 @@ public class ResourceBO implements Serializable {
 		this.resourceText = resourceText;
 	}
 
-	public void setResourceType(Boolean resourceType) {
+	public void setResourceType(boolean resourceType) {
 		this.resourceType = resourceType;
 	}
 
-	public void setResourceVisibility(Boolean resourceVisibility) {
+	public void setResourceVisibility(boolean resourceVisibility) {
 		this.resourceVisibility = resourceVisibility;
 	}
 
@@ -294,7 +294,7 @@ public class ResourceBO implements Serializable {
 		this.startDate = startDate;
 	}
 
-	public void setStatus(Boolean status) {
+	public void setStatus(boolean status) {
 		this.status = status;
 	}
 
@@ -302,11 +302,11 @@ public class ResourceBO implements Serializable {
 		this.studyId = studyId;
 	}
 
-	public void setStudyProtocol(Boolean studyProtocol) {
+	public void setStudyProtocol(boolean studyProtocol) {
 		this.studyProtocol = studyProtocol;
 	}
 
-	public void setTextOrPdf(Boolean textOrPdf) {
+	public void setTextOrPdf(boolean textOrPdf) {
 		this.textOrPdf = textOrPdf;
 	}
 
@@ -322,11 +322,11 @@ public class ResourceBO implements Serializable {
 		this.title = title;
 	}
 
-	public void setxDaysSign(Boolean xDaysSign) {
+	public void setxDaysSign(boolean xDaysSign) {
 		this.xDaysSign = xDaysSign;
 	}
 
-	public void setyDaysSign(Boolean yDaysSign) {
+	public void setyDaysSign(boolean yDaysSign) {
 		this.yDaysSign = yDaysSign;
 	}
 }

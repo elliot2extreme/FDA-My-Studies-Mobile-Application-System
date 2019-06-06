@@ -51,7 +51,7 @@ public class NotificationBO implements Serializable {
 	private Integer activeTaskId;
 
 	@Column(name = "is_anchor_date", length = 1)
-	private Boolean anchorDate = false;
+	private boolean anchorDate = false;
 
 	@Transient
 	private String checkNotificationSendingStatus;
@@ -72,10 +72,10 @@ public class NotificationBO implements Serializable {
 	private String modifiedOn;
 
 	@Column(name = "notification_action", length = 1)
-	private Boolean notificationAction;
+	private boolean notificationAction;
 
 	@Column(name = "notification_done", length = 1)
-	private Boolean notificationDone = true;
+	private boolean notificationDone = true;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -86,10 +86,10 @@ public class NotificationBO implements Serializable {
 	private String notificationScheduleType;
 
 	@Column(name = "notification_sent", length = 1)
-	private Boolean notificationSent = false;
+	private boolean notificationSent = false;
 
 	@Column(name = "notification_status", length = 1)
-	private Boolean notificationStatus = false;
+	private boolean notificationStatus = false;
 
 	@Column(name = "notification_subType")
 	private String notificationSubType;
@@ -194,23 +194,23 @@ public class NotificationBO implements Serializable {
 		return xDays;
 	}
 
-	public Boolean isAnchorDate() {
+	public boolean isAnchorDate() {
 		return anchorDate;
 	}
 
-	public Boolean isNotificationAction() {
+	public boolean isNotificationAction() {
 		return notificationAction;
 	}
 
-	public Boolean isNotificationDone() {
+	public boolean isNotificationDone() {
 		return notificationDone;
 	}
 
-	public Boolean isNotificationSent() {
+	public boolean isNotificationSent() {
 		return notificationSent;
 	}
 
-	public Boolean isNotificationStatus() {
+	public boolean isNotificationStatus() {
 		return notificationStatus;
 	}
 
@@ -222,7 +222,7 @@ public class NotificationBO implements Serializable {
 		this.activeTaskId = activeTaskId;
 	}
 
-	public void setAnchorDate(Boolean anchorDate) {
+	public void setAnchorDate(boolean anchorDate) {
 		this.anchorDate = anchorDate;
 	}
 
@@ -251,11 +251,11 @@ public class NotificationBO implements Serializable {
 		this.modifiedOn = modifiedOn;
 	}
 
-	public void setNotificationAction(Boolean notificationAction) {
+	public void setNotificationAction(boolean notificationAction) {
 		this.notificationAction = notificationAction;
 	}
 
-	public void setNotificationDone(Boolean notificationDone) {
+	public void setNotificationDone(boolean notificationDone) {
 		this.notificationDone = notificationDone;
 	}
 
@@ -267,11 +267,11 @@ public class NotificationBO implements Serializable {
 		this.notificationScheduleType = notificationScheduleType;
 	}
 
-	public void setNotificationSent(Boolean notificationSent) {
+	public void setNotificationSent(boolean notificationSent) {
 		this.notificationSent = notificationSent;
 	}
 
-	public void setNotificationStatus(Boolean notificationStatus) {
+	public void setNotificationStatus(boolean notificationStatus) {
 		this.notificationStatus = notificationStatus;
 	}
 

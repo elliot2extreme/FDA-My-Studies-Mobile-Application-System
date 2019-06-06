@@ -50,7 +50,7 @@ public class ComprehensionTestResponseBo implements Serializable {
 	private Integer comprehensionTestQuestionId;
 
 	@Column(name = "correct_answer")
-	private Boolean correctAnswer;
+	private boolean correctAnswer;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -64,7 +64,7 @@ public class ComprehensionTestResponseBo implements Serializable {
 		return comprehensionTestQuestionId;
 	}
 
-	public Boolean getCorrectAnswer() {
+	public boolean getCorrectAnswer() {
 		return correctAnswer;
 	}
 
@@ -81,7 +81,7 @@ public class ComprehensionTestResponseBo implements Serializable {
 		this.comprehensionTestQuestionId = comprehensionTestQuestionId;
 	}
 
-	public void setCorrectAnswer(Boolean correctAnswer) {
+	public void setCorrectAnswer(boolean correctAnswer) {
 		this.correctAnswer = correctAnswer;
 	}
 

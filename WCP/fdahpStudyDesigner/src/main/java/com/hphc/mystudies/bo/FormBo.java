@@ -49,7 +49,7 @@ public class FormBo implements Serializable {
 	private static final long serialVersionUID = -902464262274352743L;
 
 	@Column(name = "active")
-	private Boolean active;
+	private boolean active;
 
 	@Column(name = "created_by")
 	private Integer createdBy;
@@ -68,7 +68,7 @@ public class FormBo implements Serializable {
 	@Column(name = "modified_on")
 	private String modifiedOn;
 
-	public Boolean getActive() {
+	public boolean getActive() {
 		return active;
 	}
 
@@ -92,7 +92,7 @@ public class FormBo implements Serializable {
 		return modifiedOn;
 	}
 
-	public void setActive(Boolean active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 

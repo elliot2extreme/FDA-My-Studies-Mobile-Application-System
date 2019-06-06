@@ -58,11 +58,11 @@ public class ActiveTaskAtrributeValuesBo implements Serializable {
 	private Integer activeTaskMasterAttrId;
 
 	@Transient
-	private Boolean addToDashboard = false;
+	private boolean addToDashboard = false;
 
 	@Column(name = "add_to_line_chart")
 	@Type(type = "yes_no")
-	private Boolean addToLineChart = false;
+	private boolean addToLineChart = false;
 
 	@Column(name = "attribute_val")
 	private String attributeVal;
@@ -104,7 +104,7 @@ public class ActiveTaskAtrributeValuesBo implements Serializable {
 
 	@Column(name = "use_for_statistic")
 	@Type(type = "yes_no")
-	private Boolean useForStatistic = false;
+	private boolean useForStatistic = false;
 
 	public Integer getActive() {
 		return active;
@@ -166,15 +166,15 @@ public class ActiveTaskAtrributeValuesBo implements Serializable {
 		return uploadTypeStat;
 	}
 
-	public Boolean isAddToDashboard() {
+	public boolean isAddToDashboard() {
 		return addToDashboard;
 	}
 
-	public Boolean isAddToLineChart() {
+	public boolean isAddToLineChart() {
 		return addToLineChart;
 	}
 
-	public Boolean isUseForStatistic() {
+	public boolean isUseForStatistic() {
 		return useForStatistic;
 	}
 
@@ -190,11 +190,11 @@ public class ActiveTaskAtrributeValuesBo implements Serializable {
 		this.activeTaskMasterAttrId = activeTaskMasterAttrId;
 	}
 
-	public void setAddToDashboard(Boolean addToDashboard) {
+	public void setAddToDashboard(boolean addToDashboard) {
 		this.addToDashboard = addToDashboard;
 	}
 
-	public void setAddToLineChart(Boolean addToLineChart) {
+	public void setAddToLineChart(boolean addToLineChart) {
 		this.addToLineChart = addToLineChart;
 	}
 
@@ -247,7 +247,7 @@ public class ActiveTaskAtrributeValuesBo implements Serializable {
 		this.uploadTypeStat = uploadTypeStat;
 	}
 
-	public void setUseForStatistic(Boolean useForStatistic) {
+	public void setUseForStatistic(boolean useForStatistic) {
 		this.useForStatistic = useForStatistic;
 	}
 

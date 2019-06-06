@@ -72,7 +72,7 @@ public class StudyPermissionBO implements Serializable {
 	private Integer userId;
 
 	@Column(name = "view_permission", length = 1)
-	private Boolean viewPermission;
+	private boolean viewPermission;
 
 	public Integer getDelFlag() {
 		return delFlag;
@@ -98,7 +98,7 @@ public class StudyPermissionBO implements Serializable {
 		return userId;
 	}
 
-	public Boolean isViewPermission() {
+	public boolean isViewPermission() {
 		return viewPermission;
 	}
 
@@ -126,7 +126,7 @@ public class StudyPermissionBO implements Serializable {
 		this.userId = userId;
 	}
 
-	public void setViewPermission(Boolean viewPermission) {
+	public void setViewPermission(boolean viewPermission) {
 		this.viewPermission = viewPermission;
 	}
 }

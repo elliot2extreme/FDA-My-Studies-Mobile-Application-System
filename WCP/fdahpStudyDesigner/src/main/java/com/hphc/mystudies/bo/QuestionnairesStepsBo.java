@@ -59,7 +59,7 @@ public class QuestionnairesStepsBo implements Serializable {
 	private static final long serialVersionUID = -7908951701723989954L;
 
 	@Column(name = "active")
-	private Boolean active;
+	private boolean active;
 
 	@Column(name = "created_by")
 	private Integer createdBy;
@@ -113,7 +113,7 @@ public class QuestionnairesStepsBo implements Serializable {
 	private String skiappable;
 
 	@Column(name = "status")
-	private Boolean status;
+	private boolean status;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -129,7 +129,7 @@ public class QuestionnairesStepsBo implements Serializable {
 	@Transient
 	private String type;
 
-	public Boolean getActive() {
+	public boolean getActive() {
 		return active;
 	}
 
@@ -201,7 +201,7 @@ public class QuestionnairesStepsBo implements Serializable {
 		return skiappable;
 	}
 
-	public Boolean getStatus() {
+	public boolean getStatus() {
 		return status;
 	}
 
@@ -221,7 +221,7 @@ public class QuestionnairesStepsBo implements Serializable {
 		return type;
 	}
 
-	public void setActive(Boolean active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 
@@ -297,7 +297,7 @@ public class QuestionnairesStepsBo implements Serializable {
 		this.skiappable = skiappable;
 	}
 
-	public void setStatus(Boolean status) {
+	public void setStatus(boolean status) {
 		this.status = status;
 	}
 

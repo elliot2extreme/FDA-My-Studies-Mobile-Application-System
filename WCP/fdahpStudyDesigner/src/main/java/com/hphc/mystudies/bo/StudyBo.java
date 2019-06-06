@@ -162,7 +162,7 @@ public class StudyBo implements Serializable {
 
 	@Column(name = "study_pre_active_flag")
 	@Type(type = "yes_no")
-	private Boolean studyPreActiveFlag = false;
+	private boolean studyPreActiveFlag = false;
 
 	@Transient
 	StudySequenceBo studySequenceBo = new StudySequenceBo();
@@ -195,7 +195,7 @@ public class StudyBo implements Serializable {
 	private Float version = 0f;
 
 	@Transient
-	private Boolean viewPermission = true;
+	private boolean viewPermission = true;
 
 	public String getAllowRejoin() {
 		return allowRejoin;
@@ -369,11 +369,11 @@ public class StudyBo implements Serializable {
 		return version;
 	}
 
-	public Boolean isStudyPreActiveFlag() {
+	public boolean isStudyPreActiveFlag() {
 		return studyPreActiveFlag;
 	}
 
-	public Boolean isViewPermission() {
+	public boolean isViewPermission() {
 		return viewPermission;
 	}
 
@@ -509,7 +509,7 @@ public class StudyBo implements Serializable {
 		this.studyPermissions = studyPermissions;
 	}
 
-	public void setStudyPreActiveFlag(Boolean studyPreActiveFlag) {
+	public void setStudyPreActiveFlag(boolean studyPreActiveFlag) {
 		this.studyPreActiveFlag = studyPreActiveFlag;
 	}
 
@@ -553,7 +553,7 @@ public class StudyBo implements Serializable {
 		this.version = version;
 	}
 
-	public void setViewPermission(Boolean viewPermission) {
+	public void setViewPermission(boolean viewPermission) {
 		this.viewPermission = viewPermission;
 	}
 }

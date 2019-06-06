@@ -53,7 +53,7 @@ public class ActiveTaskBo implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Column(name = "action", length = 1)
-	private Boolean action = false;
+	private boolean action = false;
 
 	@Transient
 	private String actionPage;
@@ -80,10 +80,10 @@ public class ActiveTaskBo implements Serializable {
 	private String activeTaskVersion = "";
 
 	@Transient
-	private Boolean activityFinished = false;
+	private boolean activityFinished = false;
 
 	@Transient
-	private Boolean activityStarted = false;
+	private boolean activityStarted = false;
 
 	@Transient
 	private String buttonText;
@@ -165,7 +165,7 @@ public class ActiveTaskBo implements Serializable {
 	private Float version = 0f;
 
 	@Transient
-	private Boolean versionFlag = false;
+	private boolean versionFlag = false;
 
 	public ActiveTaskBo() {
 		// Do nothing
@@ -346,23 +346,23 @@ public class ActiveTaskBo implements Serializable {
 		return version;
 	}
 
-	public Boolean isAction() {
+	public boolean isAction() {
 		return action;
 	}
 
-	public Boolean isActivityFinished() {
+	public boolean isActivityFinished() {
 		return activityFinished;
 	}
 
-	public Boolean isActivityStarted() {
+	public boolean isActivityStarted() {
 		return activityStarted;
 	}
 
-	public Boolean isVersionFlag() {
+	public boolean isVersionFlag() {
 		return versionFlag;
 	}
 
-	public void setAction(Boolean action) {
+	public void setAction(boolean action) {
 		this.action = action;
 	}
 
@@ -413,11 +413,11 @@ public class ActiveTaskBo implements Serializable {
 		this.activeTaskVersion = activeTaskVersion;
 	}
 
-	public void setActivityFinished(Boolean activityFinished) {
+	public void setActivityFinished(boolean activityFinished) {
 		this.activityFinished = activityFinished;
 	}
 
-	public void setActivityStarted(Boolean activityStarted) {
+	public void setActivityStarted(boolean activityStarted) {
 		this.activityStarted = activityStarted;
 	}
 
@@ -567,7 +567,7 @@ public class ActiveTaskBo implements Serializable {
 		this.version = version;
 	}
 
-	public void setVersionFlag(Boolean versionFlag) {
+	public void setVersionFlag(boolean versionFlag) {
 		this.versionFlag = versionFlag;
 	}
 

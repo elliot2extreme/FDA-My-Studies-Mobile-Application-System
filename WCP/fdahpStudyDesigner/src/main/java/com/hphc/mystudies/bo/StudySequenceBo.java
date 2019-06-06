@@ -56,67 +56,67 @@ public class StudySequenceBo implements Serializable {
 
 	@Column(name = "actions")
 	@Type(type = "yes_no")
-	private Boolean actions = false;
+	private boolean actions = false;
 
 	@Column(name = "basic_info")
 	@Type(type = "yes_no")
-	private Boolean basicInfo = false;
+	private boolean basicInfo = false;
 
 	@Column(name = "check_list")
 	@Type(type = "yes_no")
-	private Boolean checkList = false;
+	private boolean checkList = false;
 
 	@Column(name = "comprehension_test")
 	@Type(type = "yes_no")
-	private Boolean comprehensionTest = false;
+	private boolean comprehensionTest = false;
 
 	@Column(name = "consent_edu_info")
 	@Type(type = "yes_no")
-	private Boolean consentEduInfo = false;
+	private boolean consentEduInfo = false;
 
 	@Column(name = "e_consent")
 	@Type(type = "yes_no")
-	private Boolean eConsent = false;
+	private boolean eConsent = false;
 
 	@Column(name = "eligibility")
 	@Type(type = "yes_no")
-	private Boolean eligibility = false;
+	private boolean eligibility = false;
 
 	@Column(name = "miscellaneous_branding")
 	@Type(type = "yes_no")
-	private Boolean miscellaneousBranding = false;
+	private boolean miscellaneousBranding = false;
 
 	@Column(name = "miscellaneous_notification")
 	@Type(type = "yes_no")
-	private Boolean miscellaneousNotification = false;
+	private boolean miscellaneousNotification = false;
 
 	@Column(name = "miscellaneous_resources")
 	@Type(type = "yes_no")
-	private Boolean miscellaneousResources = false;
+	private boolean miscellaneousResources = false;
 
 	@Column(name = "over_view")
 	@Type(type = "yes_no")
-	private Boolean overView = false;
+	private boolean overView = false;
 
 	@Column(name = "setting_admins")
 	@Type(type = "yes_no")
-	private Boolean settingAdmins = false;
+	private boolean settingAdmins = false;
 
 	@Column(name = "study_dashboard_chart")
 	@Type(type = "yes_no")
-	private Boolean studyDashboardChart = false;
+	private boolean studyDashboardChart = false;
 
 	@Column(name = "study_dashboard_stats")
 	@Type(type = "yes_no")
-	private Boolean studyDashboardStats = false;
+	private boolean studyDashboardStats = false;
 
 	@Column(name = "study_exc_active_task")
 	@Type(type = "yes_no")
-	private Boolean studyExcActiveTask = false;
+	private boolean studyExcActiveTask = false;
 
 	@Column(name = "study_exc_questionnaries")
 	@Type(type = "yes_no")
-	private Boolean studyExcQuestionnaries = false;
+	private boolean studyExcQuestionnaries = false;
 
 	@Column(name = "study_id")
 	private Integer studyId;
@@ -134,131 +134,131 @@ public class StudySequenceBo implements Serializable {
 		return studySequenceId;
 	}
 
-	public Boolean isActions() {
+	public boolean isActions() {
 		return actions;
 	}
 
-	public Boolean isBasicInfo() {
+	public boolean isBasicInfo() {
 		return basicInfo;
 	}
 
-	public Boolean isCheckList() {
+	public boolean isCheckList() {
 		return checkList;
 	}
 
-	public Boolean isComprehensionTest() {
+	public boolean isComprehensionTest() {
 		return comprehensionTest;
 	}
 
-	public Boolean isConsentEduInfo() {
+	public boolean isConsentEduInfo() {
 		return consentEduInfo;
 	}
 
-	public Boolean iseConsent() {
+	public boolean iseConsent() {
 		return eConsent;
 	}
 
-	public Boolean isEligibility() {
+	public boolean isEligibility() {
 		return eligibility;
 	}
 
-	public Boolean isMiscellaneousBranding() {
+	public boolean isMiscellaneousBranding() {
 		return miscellaneousBranding;
 	}
 
-	public Boolean isMiscellaneousNotification() {
+	public boolean isMiscellaneousNotification() {
 		return miscellaneousNotification;
 	}
 
-	public Boolean isMiscellaneousResources() {
+	public boolean isMiscellaneousResources() {
 		return miscellaneousResources;
 	}
 
-	public Boolean isOverView() {
+	public boolean isOverView() {
 		return overView;
 	}
 
-	public Boolean isSettingAdmins() {
+	public boolean isSettingAdmins() {
 		return settingAdmins;
 	}
 
-	public Boolean isStudyDashboardChart() {
+	public boolean isStudyDashboardChart() {
 		return studyDashboardChart;
 	}
 
-	public Boolean isStudyDashboardStats() {
+	public boolean isStudyDashboardStats() {
 		return studyDashboardStats;
 	}
 
-	public Boolean isStudyExcActiveTask() {
+	public boolean isStudyExcActiveTask() {
 		return studyExcActiveTask;
 	}
 
-	public Boolean isStudyExcQuestionnaries() {
+	public boolean isStudyExcQuestionnaries() {
 		return studyExcQuestionnaries;
 	}
 
-	public void setActions(Boolean actions) {
+	public void setActions(boolean actions) {
 		this.actions = actions;
 	}
 
-	public void setBasicInfo(Boolean basicInfo) {
+	public void setBasicInfo(boolean basicInfo) {
 		this.basicInfo = basicInfo;
 	}
 
-	public void setCheckList(Boolean checkList) {
+	public void setCheckList(boolean checkList) {
 		this.checkList = checkList;
 	}
 
-	public void setComprehensionTest(Boolean comprehensionTest) {
+	public void setComprehensionTest(boolean comprehensionTest) {
 		this.comprehensionTest = comprehensionTest;
 	}
 
-	public void setConsentEduInfo(Boolean consentEduInfo) {
+	public void setConsentEduInfo(boolean consentEduInfo) {
 		this.consentEduInfo = consentEduInfo;
 	}
 
-	public void seteConsent(Boolean eConsent) {
+	public void seteConsent(boolean eConsent) {
 		this.eConsent = eConsent;
 	}
 
-	public void setEligibility(Boolean eligibility) {
+	public void setEligibility(boolean eligibility) {
 		this.eligibility = eligibility;
 	}
 
-	public void setMiscellaneousBranding(Boolean miscellaneousBranding) {
+	public void setMiscellaneousBranding(boolean miscellaneousBranding) {
 		this.miscellaneousBranding = miscellaneousBranding;
 	}
 
-	public void setMiscellaneousNotification(Boolean miscellaneousNotification) {
+	public void setMiscellaneousNotification(boolean miscellaneousNotification) {
 		this.miscellaneousNotification = miscellaneousNotification;
 	}
 
-	public void setMiscellaneousResources(Boolean miscellaneousResources) {
+	public void setMiscellaneousResources(boolean miscellaneousResources) {
 		this.miscellaneousResources = miscellaneousResources;
 	}
 
-	public void setOverView(Boolean overView) {
+	public void setOverView(boolean overView) {
 		this.overView = overView;
 	}
 
-	public void setSettingAdmins(Boolean settingAdmins) {
+	public void setSettingAdmins(boolean settingAdmins) {
 		this.settingAdmins = settingAdmins;
 	}
 
-	public void setStudyDashboardChart(Boolean studyDashboardChart) {
+	public void setStudyDashboardChart(boolean studyDashboardChart) {
 		this.studyDashboardChart = studyDashboardChart;
 	}
 
-	public void setStudyDashboardStats(Boolean studyDashboardStats) {
+	public void setStudyDashboardStats(boolean studyDashboardStats) {
 		this.studyDashboardStats = studyDashboardStats;
 	}
 
-	public void setStudyExcActiveTask(Boolean studyExcActiveTask) {
+	public void setStudyExcActiveTask(boolean studyExcActiveTask) {
 		this.studyExcActiveTask = studyExcActiveTask;
 	}
 
-	public void setStudyExcQuestionnaries(Boolean studyExcQuestionnaries) {
+	public void setStudyExcQuestionnaries(boolean studyExcQuestionnaries) {
 		this.studyExcQuestionnaries = studyExcQuestionnaries;
 	}
 

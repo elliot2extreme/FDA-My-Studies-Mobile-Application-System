@@ -48,7 +48,7 @@ public class ConsentInfoBo implements Serializable {
 	private static final long serialVersionUID = 7994683067825219315L;
 
 	@Column(name = "active")
-	private Boolean active = true;
+	private boolean active = true;
 
 	@Column(name = "brief_summary")
 	private String briefSummary;
@@ -98,7 +98,7 @@ public class ConsentInfoBo implements Serializable {
 	private Integer sequenceNo;
 
 	@Column(name = "status")
-	private Boolean status;
+	private boolean status;
 
 	@Column(name = "study_id")
 	private Integer studyId;
@@ -115,7 +115,7 @@ public class ConsentInfoBo implements Serializable {
 	@Column(name = "visual_step")
 	private String visualStep;
 
-	public Boolean getActive() {
+	public boolean getActive() {
 		return active;
 	}
 
@@ -179,7 +179,7 @@ public class ConsentInfoBo implements Serializable {
 		return sequenceNo;
 	}
 
-	public Boolean getStatus() {
+	public boolean getStatus() {
 		return status;
 	}
 
@@ -203,7 +203,7 @@ public class ConsentInfoBo implements Serializable {
 		return visualStep;
 	}
 
-	public void setActive(Boolean active) {
+	public void setActive(boolean active) {
 		this.active = active;
 	}
 
@@ -267,7 +267,7 @@ public class ConsentInfoBo implements Serializable {
 		this.sequenceNo = sequenceNo;
 	}
 
-	public void setStatus(Boolean status) {
+	public void setStatus(boolean status) {
 		this.status = status;
 	}
 
