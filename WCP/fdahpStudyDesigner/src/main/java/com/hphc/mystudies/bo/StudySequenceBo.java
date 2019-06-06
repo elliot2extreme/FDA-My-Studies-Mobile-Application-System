@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -56,67 +56,67 @@ public class StudySequenceBo implements Serializable {
 
 	@Column(name = "actions")
 	@Type(type = "yes_no")
-	private boolean actions = false;
+	private Boolean actions = false;
 
 	@Column(name = "basic_info")
 	@Type(type = "yes_no")
-	private boolean basicInfo = false;
+	private Boolean basicInfo = false;
 
 	@Column(name = "check_list")
 	@Type(type = "yes_no")
-	private boolean checkList = false;
+	private Boolean checkList = false;
 
 	@Column(name = "comprehension_test")
 	@Type(type = "yes_no")
-	private boolean comprehensionTest = false;
+	private Boolean comprehensionTest = false;
 
 	@Column(name = "consent_edu_info")
 	@Type(type = "yes_no")
-	private boolean consentEduInfo = false;
+	private Boolean consentEduInfo = false;
 
 	@Column(name = "e_consent")
 	@Type(type = "yes_no")
-	private boolean eConsent = false;
+	private Boolean eConsent = false;
 
 	@Column(name = "eligibility")
 	@Type(type = "yes_no")
-	private boolean eligibility = false;
+	private Boolean eligibility = false;
 
 	@Column(name = "miscellaneous_branding")
 	@Type(type = "yes_no")
-	private boolean miscellaneousBranding = false;
+	private Boolean miscellaneousBranding = false;
 
 	@Column(name = "miscellaneous_notification")
 	@Type(type = "yes_no")
-	private boolean miscellaneousNotification = false;
+	private Boolean miscellaneousNotification = false;
 
 	@Column(name = "miscellaneous_resources")
 	@Type(type = "yes_no")
-	private boolean miscellaneousResources = false;
+	private Boolean miscellaneousResources = false;
 
 	@Column(name = "over_view")
 	@Type(type = "yes_no")
-	private boolean overView = false;
+	private Boolean overView = false;
 
 	@Column(name = "setting_admins")
 	@Type(type = "yes_no")
-	private boolean settingAdmins = false;
+	private Boolean settingAdmins = false;
 
 	@Column(name = "study_dashboard_chart")
 	@Type(type = "yes_no")
-	private boolean studyDashboardChart = false;
+	private Boolean studyDashboardChart = false;
 
 	@Column(name = "study_dashboard_stats")
 	@Type(type = "yes_no")
-	private boolean studyDashboardStats = false;
+	private Boolean studyDashboardStats = false;
 
 	@Column(name = "study_exc_active_task")
 	@Type(type = "yes_no")
-	private boolean studyExcActiveTask = false;
+	private Boolean studyExcActiveTask = false;
 
 	@Column(name = "study_exc_questionnaries")
 	@Type(type = "yes_no")
-	private boolean studyExcQuestionnaries = false;
+	private Boolean studyExcQuestionnaries = false;
 
 	@Column(name = "study_id")
 	private Integer studyId;
@@ -134,131 +134,131 @@ public class StudySequenceBo implements Serializable {
 		return studySequenceId;
 	}
 
-	public boolean isActions() {
+	public Boolean isActions() {
 		return actions;
 	}
 
-	public boolean isBasicInfo() {
+	public Boolean isBasicInfo() {
 		return basicInfo;
 	}
 
-	public boolean isCheckList() {
+	public Boolean isCheckList() {
 		return checkList;
 	}
 
-	public boolean isComprehensionTest() {
+	public Boolean isComprehensionTest() {
 		return comprehensionTest;
 	}
 
-	public boolean isConsentEduInfo() {
+	public Boolean isConsentEduInfo() {
 		return consentEduInfo;
 	}
 
-	public boolean iseConsent() {
+	public Boolean iseConsent() {
 		return eConsent;
 	}
 
-	public boolean isEligibility() {
+	public Boolean isEligibility() {
 		return eligibility;
 	}
 
-	public boolean isMiscellaneousBranding() {
+	public Boolean isMiscellaneousBranding() {
 		return miscellaneousBranding;
 	}
 
-	public boolean isMiscellaneousNotification() {
+	public Boolean isMiscellaneousNotification() {
 		return miscellaneousNotification;
 	}
 
-	public boolean isMiscellaneousResources() {
+	public Boolean isMiscellaneousResources() {
 		return miscellaneousResources;
 	}
 
-	public boolean isOverView() {
+	public Boolean isOverView() {
 		return overView;
 	}
 
-	public boolean isSettingAdmins() {
+	public Boolean isSettingAdmins() {
 		return settingAdmins;
 	}
 
-	public boolean isStudyDashboardChart() {
+	public Boolean isStudyDashboardChart() {
 		return studyDashboardChart;
 	}
 
-	public boolean isStudyDashboardStats() {
+	public Boolean isStudyDashboardStats() {
 		return studyDashboardStats;
 	}
 
-	public boolean isStudyExcActiveTask() {
+	public Boolean isStudyExcActiveTask() {
 		return studyExcActiveTask;
 	}
 
-	public boolean isStudyExcQuestionnaries() {
+	public Boolean isStudyExcQuestionnaries() {
 		return studyExcQuestionnaries;
 	}
 
-	public void setActions(boolean actions) {
+	public void setActions(Boolean actions) {
 		this.actions = actions;
 	}
 
-	public void setBasicInfo(boolean basicInfo) {
+	public void setBasicInfo(Boolean basicInfo) {
 		this.basicInfo = basicInfo;
 	}
 
-	public void setCheckList(boolean checkList) {
+	public void setCheckList(Boolean checkList) {
 		this.checkList = checkList;
 	}
 
-	public void setComprehensionTest(boolean comprehensionTest) {
+	public void setComprehensionTest(Boolean comprehensionTest) {
 		this.comprehensionTest = comprehensionTest;
 	}
 
-	public void setConsentEduInfo(boolean consentEduInfo) {
+	public void setConsentEduInfo(Boolean consentEduInfo) {
 		this.consentEduInfo = consentEduInfo;
 	}
 
-	public void seteConsent(boolean eConsent) {
+	public void seteConsent(Boolean eConsent) {
 		this.eConsent = eConsent;
 	}
 
-	public void setEligibility(boolean eligibility) {
+	public void setEligibility(Boolean eligibility) {
 		this.eligibility = eligibility;
 	}
 
-	public void setMiscellaneousBranding(boolean miscellaneousBranding) {
+	public void setMiscellaneousBranding(Boolean miscellaneousBranding) {
 		this.miscellaneousBranding = miscellaneousBranding;
 	}
 
-	public void setMiscellaneousNotification(boolean miscellaneousNotification) {
+	public void setMiscellaneousNotification(Boolean miscellaneousNotification) {
 		this.miscellaneousNotification = miscellaneousNotification;
 	}
 
-	public void setMiscellaneousResources(boolean miscellaneousResources) {
+	public void setMiscellaneousResources(Boolean miscellaneousResources) {
 		this.miscellaneousResources = miscellaneousResources;
 	}
 
-	public void setOverView(boolean overView) {
+	public void setOverView(Boolean overView) {
 		this.overView = overView;
 	}
 
-	public void setSettingAdmins(boolean settingAdmins) {
+	public void setSettingAdmins(Boolean settingAdmins) {
 		this.settingAdmins = settingAdmins;
 	}
 
-	public void setStudyDashboardChart(boolean studyDashboardChart) {
+	public void setStudyDashboardChart(Boolean studyDashboardChart) {
 		this.studyDashboardChart = studyDashboardChart;
 	}
 
-	public void setStudyDashboardStats(boolean studyDashboardStats) {
+	public void setStudyDashboardStats(Boolean studyDashboardStats) {
 		this.studyDashboardStats = studyDashboardStats;
 	}
 
-	public void setStudyExcActiveTask(boolean studyExcActiveTask) {
+	public void setStudyExcActiveTask(Boolean studyExcActiveTask) {
 		this.studyExcActiveTask = studyExcActiveTask;
 	}
 
-	public void setStudyExcQuestionnaries(boolean studyExcQuestionnaries) {
+	public void setStudyExcQuestionnaries(Boolean studyExcQuestionnaries) {
 		this.studyExcQuestionnaries = studyExcQuestionnaries;
 	}
 

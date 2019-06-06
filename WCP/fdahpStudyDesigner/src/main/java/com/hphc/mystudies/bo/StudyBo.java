@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -162,7 +162,7 @@ public class StudyBo implements Serializable {
 
 	@Column(name = "study_pre_active_flag")
 	@Type(type = "yes_no")
-	private boolean studyPreActiveFlag = false;
+	private Boolean studyPreActiveFlag = false;
 
 	@Transient
 	StudySequenceBo studySequenceBo = new StudySequenceBo();
@@ -195,7 +195,7 @@ public class StudyBo implements Serializable {
 	private Float version = 0f;
 
 	@Transient
-	private boolean viewPermission = true;
+	private Boolean viewPermission = true;
 
 	public String getAllowRejoin() {
 		return allowRejoin;
@@ -369,11 +369,11 @@ public class StudyBo implements Serializable {
 		return version;
 	}
 
-	public boolean isStudyPreActiveFlag() {
+	public Boolean isStudyPreActiveFlag() {
 		return studyPreActiveFlag;
 	}
 
-	public boolean isViewPermission() {
+	public Boolean isViewPermission() {
 		return viewPermission;
 	}
 
@@ -509,7 +509,7 @@ public class StudyBo implements Serializable {
 		this.studyPermissions = studyPermissions;
 	}
 
-	public void setStudyPreActiveFlag(boolean studyPreActiveFlag) {
+	public void setStudyPreActiveFlag(Boolean studyPreActiveFlag) {
 		this.studyPreActiveFlag = studyPreActiveFlag;
 	}
 
@@ -553,7 +553,7 @@ public class StudyBo implements Serializable {
 		this.version = version;
 	}
 
-	public void setViewPermission(boolean viewPermission) {
+	public void setViewPermission(Boolean viewPermission) {
 		this.viewPermission = viewPermission;
 	}
 }

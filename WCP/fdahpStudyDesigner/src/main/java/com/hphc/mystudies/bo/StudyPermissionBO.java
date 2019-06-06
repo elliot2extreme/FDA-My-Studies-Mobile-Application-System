@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -72,7 +72,7 @@ public class StudyPermissionBO implements Serializable {
 	private Integer userId;
 
 	@Column(name = "view_permission", length = 1)
-	private boolean viewPermission;
+	private Boolean viewPermission;
 
 	public Integer getDelFlag() {
 		return delFlag;
@@ -98,7 +98,7 @@ public class StudyPermissionBO implements Serializable {
 		return userId;
 	}
 
-	public boolean isViewPermission() {
+	public Boolean isViewPermission() {
 		return viewPermission;
 	}
 
@@ -126,7 +126,7 @@ public class StudyPermissionBO implements Serializable {
 		this.userId = userId;
 	}
 
-	public void setViewPermission(boolean viewPermission) {
+	public void setViewPermission(Boolean viewPermission) {
 		this.viewPermission = viewPermission;
 	}
 }

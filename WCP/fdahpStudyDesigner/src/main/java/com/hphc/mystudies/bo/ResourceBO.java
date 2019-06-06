@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -54,7 +54,7 @@ public class ResourceBO implements Serializable {
 	private static final long serialVersionUID = -4548349227102496191L;
 
 	@Column(name = "action", length = 1)
-	private boolean action;
+	private Boolean action;
 
 	@Column(name = "created_by")
 	private Integer createdBy;
@@ -89,10 +89,10 @@ public class ResourceBO implements Serializable {
 	private String resourceText;
 
 	@Column(name = "resource_type", length = 1)
-	private boolean resourceType;
+	private Boolean resourceType;
 
 	@Column(name = "resource_visibility", length = 1)
-	private boolean resourceVisibility;
+	private Boolean resourceVisibility;
 
 	@Column(name = "rich_text")
 	private String richText;
@@ -104,16 +104,16 @@ public class ResourceBO implements Serializable {
 	private String startDate;
 
 	@Column(name = "status", length = 1)
-	private boolean status;
+	private Boolean status;
 
 	@Column(name = "study_id")
 	private Integer studyId;
 
 	@Column(name = "study_protocol", length = 1)
-	private boolean studyProtocol;
+	private Boolean studyProtocol;
 
 	@Column(name = "text_or_pdf", length = 1)
-	private boolean textOrPdf;
+	private Boolean textOrPdf;
 
 	@Column(name = "time_period_from_days")
 	private Integer timePeriodFromDays;
@@ -125,10 +125,10 @@ public class ResourceBO implements Serializable {
 	private String title;
 
 	@Column(name = "x_days_sign", length = 1)
-	private boolean xDaysSign = false;
+	private Boolean xDaysSign = false;
 
 	@Column(name = "y_days_sign", length = 1)
-	private boolean yDaysSign = false;
+	private Boolean yDaysSign = false;
 
 	public Integer getCreatedBy() {
 		return createdBy;
@@ -198,39 +198,39 @@ public class ResourceBO implements Serializable {
 		return title;
 	}
 
-	public boolean isAction() {
+	public Boolean isAction() {
 		return action;
 	}
 
-	public boolean isResourceType() {
+	public Boolean isResourceType() {
 		return resourceType;
 	}
 
-	public boolean isResourceVisibility() {
+	public Boolean isResourceVisibility() {
 		return resourceVisibility;
 	}
 
-	public boolean isStatus() {
+	public Boolean isStatus() {
 		return status;
 	}
 
-	public boolean isStudyProtocol() {
+	public Boolean isStudyProtocol() {
 		return studyProtocol;
 	}
 
-	public boolean isTextOrPdf() {
+	public Boolean isTextOrPdf() {
 		return textOrPdf;
 	}
 
-	public boolean isxDaysSign() {
+	public Boolean isxDaysSign() {
 		return xDaysSign;
 	}
 
-	public boolean isyDaysSign() {
+	public Boolean isyDaysSign() {
 		return yDaysSign;
 	}
 
-	public void setAction(boolean action) {
+	public void setAction(Boolean action) {
 		this.action = action;
 	}
 
@@ -274,11 +274,11 @@ public class ResourceBO implements Serializable {
 		this.resourceText = resourceText;
 	}
 
-	public void setResourceType(boolean resourceType) {
+	public void setResourceType(Boolean resourceType) {
 		this.resourceType = resourceType;
 	}
 
-	public void setResourceVisibility(boolean resourceVisibility) {
+	public void setResourceVisibility(Boolean resourceVisibility) {
 		this.resourceVisibility = resourceVisibility;
 	}
 
@@ -294,7 +294,7 @@ public class ResourceBO implements Serializable {
 		this.startDate = startDate;
 	}
 
-	public void setStatus(boolean status) {
+	public void setStatus(Boolean status) {
 		this.status = status;
 	}
 
@@ -302,11 +302,11 @@ public class ResourceBO implements Serializable {
 		this.studyId = studyId;
 	}
 
-	public void setStudyProtocol(boolean studyProtocol) {
+	public void setStudyProtocol(Boolean studyProtocol) {
 		this.studyProtocol = studyProtocol;
 	}
 
-	public void setTextOrPdf(boolean textOrPdf) {
+	public void setTextOrPdf(Boolean textOrPdf) {
 		this.textOrPdf = textOrPdf;
 	}
 
@@ -322,11 +322,11 @@ public class ResourceBO implements Serializable {
 		this.title = title;
 	}
 
-	public void setxDaysSign(boolean xDaysSign) {
+	public void setxDaysSign(Boolean xDaysSign) {
 		this.xDaysSign = xDaysSign;
 	}
 
-	public void setyDaysSign(boolean yDaysSign) {
+	public void setyDaysSign(Boolean yDaysSign) {
 		this.yDaysSign = yDaysSign;
 	}
 }

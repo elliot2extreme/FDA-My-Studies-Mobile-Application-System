@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -58,11 +58,11 @@ public class ActiveTaskAtrributeValuesBo implements Serializable {
 	private Integer activeTaskMasterAttrId;
 
 	@Transient
-	private boolean addToDashboard = false;
+	private Boolean addToDashboard = false;
 
 	@Column(name = "add_to_line_chart")
 	@Type(type = "yes_no")
-	private boolean addToLineChart = false;
+	private Boolean addToLineChart = false;
 
 	@Column(name = "attribute_val")
 	private String attributeVal;
@@ -104,7 +104,7 @@ public class ActiveTaskAtrributeValuesBo implements Serializable {
 
 	@Column(name = "use_for_statistic")
 	@Type(type = "yes_no")
-	private boolean useForStatistic = false;
+	private Boolean useForStatistic = false;
 
 	public Integer getActive() {
 		return active;
@@ -166,15 +166,15 @@ public class ActiveTaskAtrributeValuesBo implements Serializable {
 		return uploadTypeStat;
 	}
 
-	public boolean isAddToDashboard() {
+	public Boolean isAddToDashboard() {
 		return addToDashboard;
 	}
 
-	public boolean isAddToLineChart() {
+	public Boolean isAddToLineChart() {
 		return addToLineChart;
 	}
 
-	public boolean isUseForStatistic() {
+	public Boolean isUseForStatistic() {
 		return useForStatistic;
 	}
 
@@ -190,11 +190,11 @@ public class ActiveTaskAtrributeValuesBo implements Serializable {
 		this.activeTaskMasterAttrId = activeTaskMasterAttrId;
 	}
 
-	public void setAddToDashboard(boolean addToDashboard) {
+	public void setAddToDashboard(Boolean addToDashboard) {
 		this.addToDashboard = addToDashboard;
 	}
 
-	public void setAddToLineChart(boolean addToLineChart) {
+	public void setAddToLineChart(Boolean addToLineChart) {
 		this.addToLineChart = addToLineChart;
 	}
 
@@ -247,7 +247,7 @@ public class ActiveTaskAtrributeValuesBo implements Serializable {
 		this.uploadTypeStat = uploadTypeStat;
 	}
 
-	public void setUseForStatistic(boolean useForStatistic) {
+	public void setUseForStatistic(Boolean useForStatistic) {
 		this.useForStatistic = useForStatistic;
 	}
 

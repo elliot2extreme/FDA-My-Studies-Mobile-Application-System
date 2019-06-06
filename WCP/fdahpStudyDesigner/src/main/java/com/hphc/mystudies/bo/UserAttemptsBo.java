@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -56,7 +56,7 @@ public class UserAttemptsBo implements Serializable {
 	private static final long serialVersionUID = -3166967048106586712L;
 
 	@Column(name = "attempts")
-	private int attempts;
+	private Integer attempts;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -72,7 +72,7 @@ public class UserAttemptsBo implements Serializable {
 	/**
 	 * @return the attempts
 	 */
-	public int getAttempts() {
+	public Integer getAttempts() {
 		return attempts;
 	}
 
@@ -98,7 +98,7 @@ public class UserAttemptsBo implements Serializable {
 	 * @param attempts
 	 *            the attempts to set
 	 */
-	public void setAttempts(int attempts) {
+	public void setAttempts(Integer attempts) {
 		this.attempts = attempts;
 	}
 

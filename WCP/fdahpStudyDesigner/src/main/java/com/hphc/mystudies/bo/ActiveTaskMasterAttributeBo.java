@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -46,7 +46,7 @@ public class ActiveTaskMasterAttributeBo implements Serializable {
 
 	@Column(name = "add_to_dashboard")
 	@Type(type = "yes_no")
-	private boolean addToDashboard = false;
+	private Boolean addToDashboard = false;
 
 	@Column(name = "attribute_data_type")
 	private String attributeDataType;
@@ -99,11 +99,11 @@ public class ActiveTaskMasterAttributeBo implements Serializable {
 		return taskTypeId;
 	}
 
-	public boolean isAddToDashboard() {
+	public Boolean isAddToDashboard() {
 		return addToDashboard;
 	}
 
-	public void setAddToDashboard(boolean addToDashboard) {
+	public void setAddToDashboard(Boolean addToDashboard) {
 		this.addToDashboard = addToDashboard;
 	}
 

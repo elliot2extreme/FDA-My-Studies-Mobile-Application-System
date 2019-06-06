@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -53,7 +53,7 @@ public class ActiveTaskBo implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Column(name = "action", length = 1)
-	private boolean action = false;
+	private Boolean action = false;
 
 	@Transient
 	private String actionPage;
@@ -80,10 +80,10 @@ public class ActiveTaskBo implements Serializable {
 	private String activeTaskVersion = "";
 
 	@Transient
-	private boolean activityFinished = false;
+	private Boolean activityFinished = false;
 
 	@Transient
-	private boolean activityStarted = false;
+	private Boolean activityStarted = false;
 
 	@Transient
 	private String buttonText;
@@ -165,7 +165,7 @@ public class ActiveTaskBo implements Serializable {
 	private Float version = 0f;
 
 	@Transient
-	private boolean versionFlag = false;
+	private Boolean versionFlag = false;
 
 	public ActiveTaskBo() {
 		// Do nothing
@@ -346,23 +346,23 @@ public class ActiveTaskBo implements Serializable {
 		return version;
 	}
 
-	public boolean isAction() {
+	public Boolean isAction() {
 		return action;
 	}
 
-	public boolean isActivityFinished() {
+	public Boolean isActivityFinished() {
 		return activityFinished;
 	}
 
-	public boolean isActivityStarted() {
+	public Boolean isActivityStarted() {
 		return activityStarted;
 	}
 
-	public boolean isVersionFlag() {
+	public Boolean isVersionFlag() {
 		return versionFlag;
 	}
 
-	public void setAction(boolean action) {
+	public void setAction(Boolean action) {
 		this.action = action;
 	}
 
@@ -413,11 +413,11 @@ public class ActiveTaskBo implements Serializable {
 		this.activeTaskVersion = activeTaskVersion;
 	}
 
-	public void setActivityFinished(boolean activityFinished) {
+	public void setActivityFinished(Boolean activityFinished) {
 		this.activityFinished = activityFinished;
 	}
 
-	public void setActivityStarted(boolean activityStarted) {
+	public void setActivityStarted(Boolean activityStarted) {
 		this.activityStarted = activityStarted;
 	}
 
@@ -567,7 +567,7 @@ public class ActiveTaskBo implements Serializable {
 		this.version = version;
 	}
 
-	public void setVersionFlag(boolean versionFlag) {
+	public void setVersionFlag(Boolean versionFlag) {
 		this.versionFlag = versionFlag;
 	}
 

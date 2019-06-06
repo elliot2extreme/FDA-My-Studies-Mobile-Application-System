@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -53,7 +53,7 @@ public class ActiveTaskStepBo implements Serializable {
 	private String sdLiveFormId;
 
 	@Column(name = "sequence_no")
-	private int sequenceNo;
+	private Integer sequenceNo;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -76,7 +76,7 @@ public class ActiveTaskStepBo implements Serializable {
 		return this.sdLiveFormId;
 	}
 
-	public int getSequenceNo() {
+	public Integer getSequenceNo() {
 		return this.sequenceNo;
 	}
 
@@ -96,7 +96,7 @@ public class ActiveTaskStepBo implements Serializable {
 		this.sdLiveFormId = sdLiveFormId;
 	}
 
-	public void setSequenceNo(int sequenceNo) {
+	public void setSequenceNo(Integer sequenceNo) {
 		this.sequenceNo = sequenceNo;
 	}
 

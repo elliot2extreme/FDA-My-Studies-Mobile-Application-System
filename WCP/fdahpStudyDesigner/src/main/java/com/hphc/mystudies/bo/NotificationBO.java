@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -51,7 +51,7 @@ public class NotificationBO implements Serializable {
 	private Integer activeTaskId;
 
 	@Column(name = "is_anchor_date", length = 1)
-	private boolean anchorDate = false;
+	private Boolean anchorDate = false;
 
 	@Transient
 	private String checkNotificationSendingStatus;
@@ -72,10 +72,10 @@ public class NotificationBO implements Serializable {
 	private String modifiedOn;
 
 	@Column(name = "notification_action", length = 1)
-	private boolean notificationAction;
+	private Boolean notificationAction;
 
 	@Column(name = "notification_done", length = 1)
-	private boolean notificationDone = true;
+	private Boolean notificationDone = true;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -86,10 +86,10 @@ public class NotificationBO implements Serializable {
 	private String notificationScheduleType;
 
 	@Column(name = "notification_sent", length = 1)
-	private boolean notificationSent = false;
+	private Boolean notificationSent = false;
 
 	@Column(name = "notification_status", length = 1)
-	private boolean notificationStatus = false;
+	private Boolean notificationStatus = false;
 
 	@Column(name = "notification_subType")
 	private String notificationSubType;
@@ -194,23 +194,23 @@ public class NotificationBO implements Serializable {
 		return xDays;
 	}
 
-	public boolean isAnchorDate() {
+	public Boolean isAnchorDate() {
 		return anchorDate;
 	}
 
-	public boolean isNotificationAction() {
+	public Boolean isNotificationAction() {
 		return notificationAction;
 	}
 
-	public boolean isNotificationDone() {
+	public Boolean isNotificationDone() {
 		return notificationDone;
 	}
 
-	public boolean isNotificationSent() {
+	public Boolean isNotificationSent() {
 		return notificationSent;
 	}
 
-	public boolean isNotificationStatus() {
+	public Boolean isNotificationStatus() {
 		return notificationStatus;
 	}
 
@@ -222,7 +222,7 @@ public class NotificationBO implements Serializable {
 		this.activeTaskId = activeTaskId;
 	}
 
-	public void setAnchorDate(boolean anchorDate) {
+	public void setAnchorDate(Boolean anchorDate) {
 		this.anchorDate = anchorDate;
 	}
 
@@ -251,11 +251,11 @@ public class NotificationBO implements Serializable {
 		this.modifiedOn = modifiedOn;
 	}
 
-	public void setNotificationAction(boolean notificationAction) {
+	public void setNotificationAction(Boolean notificationAction) {
 		this.notificationAction = notificationAction;
 	}
 
-	public void setNotificationDone(boolean notificationDone) {
+	public void setNotificationDone(Boolean notificationDone) {
 		this.notificationDone = notificationDone;
 	}
 
@@ -267,11 +267,11 @@ public class NotificationBO implements Serializable {
 		this.notificationScheduleType = notificationScheduleType;
 	}
 
-	public void setNotificationSent(boolean notificationSent) {
+	public void setNotificationSent(Boolean notificationSent) {
 		this.notificationSent = notificationSent;
 	}
 
-	public void setNotificationStatus(boolean notificationStatus) {
+	public void setNotificationStatus(Boolean notificationStatus) {
 		this.notificationStatus = notificationStatus;
 	}
 

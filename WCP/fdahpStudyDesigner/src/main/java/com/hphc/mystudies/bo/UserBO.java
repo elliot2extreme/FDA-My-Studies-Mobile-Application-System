@@ -1,5 +1,5 @@
 /*
- * Copyright © 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
+ * Copyright Â© 2017-2018 Harvard Pilgrim Health Care Institute (HPHCI) and its Contributors.
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction, including
  * without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
@@ -64,10 +64,10 @@ public class UserBO implements Serializable {
 	private String accessCode;
 
 	@Column(name = "accountNonExpired", length = 1)
-	private boolean accountNonExpired;
+	private Boolean accountNonExpired;
 
 	@Column(name = "accountNonLocked", length = 1)
-	private boolean accountNonLocked;
+	private Boolean accountNonLocked;
 
 	@Column(name = "created_by")
 	private Integer createdBy;
@@ -76,20 +76,20 @@ public class UserBO implements Serializable {
 	private String createdOn;
 
 	@Column(name = "credentialsNonExpired", length = 1)
-	private boolean credentialsNonExpired;
+	private Boolean credentialsNonExpired;
 
 	@Column(name = "email_changed", columnDefinition = "TINYINT(1)")
 	private Boolean emailChanged = false;
 
 	@Column(name = "status", length = 1)
-	private boolean enabled;
+	private Boolean enabled;
 
 	@Column(name = "first_name")
 	private String firstName;
 
 	@Column(name = "force_logout")
 	@Type(type = "yes_no")
-	private boolean forceLogout = false;
+	private Boolean forceLogout = false;
 
 	@Column(name = "last_name")
 	private String lastName;
@@ -255,29 +255,29 @@ public class UserBO implements Serializable {
 	/**
 	 * @return the accountNonExpired
 	 */
-	public boolean isAccountNonExpired() {
+	public Boolean isAccountNonExpired() {
 		return accountNonExpired;
 	}
 
 	/**
 	 * @return the accountNonLocked
 	 */
-	public boolean isAccountNonLocked() {
+	public Boolean isAccountNonLocked() {
 		return accountNonLocked;
 	}
 
 	/**
 	 * @return the credentialsNonExpired
 	 */
-	public boolean isCredentialsNonExpired() {
+	public Boolean isCredentialsNonExpired() {
 		return credentialsNonExpired;
 	}
 
-	public boolean isEnabled() {
+	public Boolean isEnabled() {
 		return enabled;
 	}
 
-	public boolean isForceLogout() {
+	public Boolean isForceLogout() {
 		return forceLogout;
 	}
 
@@ -293,7 +293,7 @@ public class UserBO implements Serializable {
 	 * @param accountNonExpired
 	 *            the accountNonExpired to set
 	 */
-	public void setAccountNonExpired(boolean accountNonExpired) {
+	public void setAccountNonExpired(Boolean accountNonExpired) {
 		this.accountNonExpired = accountNonExpired;
 	}
 
@@ -301,7 +301,7 @@ public class UserBO implements Serializable {
 	 * @param accountNonLocked
 	 *            the accountNonLocked to set
 	 */
-	public void setAccountNonLocked(boolean accountNonLocked) {
+	public void setAccountNonLocked(Boolean accountNonLocked) {
 		this.accountNonLocked = accountNonLocked;
 	}
 
@@ -317,7 +317,7 @@ public class UserBO implements Serializable {
 	 * @param credentialsNonExpired
 	 *            the credentialsNonExpired to set
 	 */
-	public void setCredentialsNonExpired(boolean credentialsNonExpired) {
+	public void setCredentialsNonExpired(Boolean credentialsNonExpired) {
 		this.credentialsNonExpired = credentialsNonExpired;
 	}
 
@@ -325,7 +325,7 @@ public class UserBO implements Serializable {
 		this.emailChanged = emailChanged;
 	}
 
-	public void setEnabled(boolean enabled) {
+	public void setEnabled(Boolean enabled) {
 		this.enabled = enabled;
 	}
 
@@ -333,7 +333,7 @@ public class UserBO implements Serializable {
 		this.firstName = firstName;
 	}
 
-	public void setForceLogout(boolean forceLogout) {
+	public void setForceLogout(Boolean forceLogout) {
 		this.forceLogout = forceLogout;
 	}
 
