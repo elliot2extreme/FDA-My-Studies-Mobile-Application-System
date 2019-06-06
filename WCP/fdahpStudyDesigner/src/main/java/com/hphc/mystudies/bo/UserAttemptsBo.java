@@ -56,7 +56,7 @@ public class UserAttemptsBo implements Serializable {
 	private static final long serialVersionUID = -3166967048106586712L;
 
 	@Column(name = "attempts")
-	private Integer attempts;
+	private int attempts;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -72,7 +72,7 @@ public class UserAttemptsBo implements Serializable {
 	/**
 	 * @return the attempts
 	 */
-	public Integer getAttempts() {
+	public int getAttempts() {
 		return attempts;
 	}
 
@@ -98,7 +98,7 @@ public class UserAttemptsBo implements Serializable {
 	 * @param attempts
 	 *            the attempts to set
 	 */
-	public void setAttempts(Integer attempts) {
+	public void setAttempts(int attempts) {
 		this.attempts = attempts;
 	}
 

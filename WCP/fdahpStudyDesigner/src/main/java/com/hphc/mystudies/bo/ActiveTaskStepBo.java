@@ -53,7 +53,7 @@ public class ActiveTaskStepBo implements Serializable {
 	private String sdLiveFormId;
 
 	@Column(name = "sequence_no")
-	private Integer sequenceNo;
+	private int sequenceNo;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -76,7 +76,7 @@ public class ActiveTaskStepBo implements Serializable {
 		return this.sdLiveFormId;
 	}
 
-	public Integer getSequenceNo() {
+	public int getSequenceNo() {
 		return this.sequenceNo;
 	}
 
@@ -96,7 +96,7 @@ public class ActiveTaskStepBo implements Serializable {
 		this.sdLiveFormId = sdLiveFormId;
 	}
 
-	public void setSequenceNo(Integer sequenceNo) {
+	public void setSequenceNo(int sequenceNo) {
 		this.sequenceNo = sequenceNo;
 	}
 

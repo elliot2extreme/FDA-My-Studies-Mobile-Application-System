@@ -48,7 +48,7 @@ public class InstructionsBo implements Serializable {
 	private static final long serialVersionUID = 1389506581768527442L;
 
 	@Column(name = "active")
-	private boolean active;
+	private Boolean active;
 
 	@Column(name = "created_by")
 	private Integer createdBy;
@@ -80,12 +80,12 @@ public class InstructionsBo implements Serializable {
 	private QuestionnairesStepsBo questionnairesStepsBo;
 
 	@Column(name = "status")
-	private boolean status;
+	private Boolean status;
 
 	@Transient
 	private String type;
 
-	public boolean getActive() {
+	public Boolean getActive() {
 		return active;
 	}
 
@@ -125,7 +125,7 @@ public class InstructionsBo implements Serializable {
 		return questionnairesStepsBo;
 	}
 
-	public boolean getStatus() {
+	public Boolean getStatus() {
 		return status;
 	}
 
@@ -133,7 +133,7 @@ public class InstructionsBo implements Serializable {
 		return type;
 	}
 
-	public void setActive(boolean active) {
+	public void setActive(Boolean active) {
 		this.active = active;
 	}
 
@@ -174,7 +174,7 @@ public class InstructionsBo implements Serializable {
 		this.questionnairesStepsBo = questionnairesStepsBo;
 	}
 
-	public void setStatus(boolean status) {
+	public void setStatus(Boolean status) {
 		this.status = status;
 	}
 

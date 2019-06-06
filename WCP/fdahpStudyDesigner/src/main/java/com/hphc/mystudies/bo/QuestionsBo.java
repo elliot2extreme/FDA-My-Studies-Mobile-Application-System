@@ -113,13 +113,13 @@ public class QuestionsBo implements Serializable {
 	private Integer modifiedBy;
 
 	@Column(name = "active")
-	private boolean active;
+	private Boolean active;
 
 	@Column(name = "status")
-	private boolean status;
+	private Boolean status;
 
 	@Column(name = "use_anchor_date")
-	private boolean useAnchorDate = false;
+	private Boolean useAnchorDate = false;
 
 	@Column(name = "allow_healthkit")
 	private String allowHealthKit = "No";
@@ -154,7 +154,7 @@ public class QuestionsBo implements Serializable {
 	@Transient
 	private Integer isStatShortNameDuplicate = 0;
 
-	public boolean getActive() {
+	public Boolean getActive() {
 		return active;
 	}
 
@@ -270,7 +270,7 @@ public class QuestionsBo implements Serializable {
 		return statType;
 	}
 
-	public boolean getStatus() {
+	public Boolean getStatus() {
 		return status;
 	}
 
@@ -282,7 +282,7 @@ public class QuestionsBo implements Serializable {
 		return type;
 	}
 
-	public boolean getUseAnchorDate() {
+	public Boolean getUseAnchorDate() {
 		return useAnchorDate;
 	}
 
@@ -290,7 +290,7 @@ public class QuestionsBo implements Serializable {
 		return useStasticData;
 	}
 
-	public void setActive(boolean active) {
+	public void setActive(Boolean active) {
 		this.active = active;
 	}
 
@@ -409,7 +409,7 @@ public class QuestionsBo implements Serializable {
 		this.statType = statType;
 	}
 
-	public void setStatus(boolean status) {
+	public void setStatus(Boolean status) {
 		this.status = status;
 	}
 
@@ -421,7 +421,7 @@ public class QuestionsBo implements Serializable {
 		this.type = type;
 	}
 
-	public void setUseAnchorDate(boolean useAnchorDate) {
+	public void setUseAnchorDate(Boolean useAnchorDate) {
 		this.useAnchorDate = useAnchorDate;
 	}
 

@@ -57,10 +57,10 @@ public class ActiveTaskFrequencyBo implements Serializable {
 	private Long id;
 
 	@Column(name = "is_launch_study")
-	private boolean isLaunchStudy = false;
+	private Boolean isLaunchStudy = false;
 
 	@Column(name = "is_study_life_time")
-	private boolean isStudyLifeTime = false;
+	private Boolean isStudyLifeTime = false;
 
 	public ActiveTaskFrequencyBo() {
 		// Do nothing
@@ -85,14 +85,14 @@ public class ActiveTaskFrequencyBo implements Serializable {
 	/**
 	 * @return the isLaunchStudy
 	 */
-	public boolean getIsLaunchStudy() {
+	public Boolean getIsLaunchStudy() {
 		return isLaunchStudy;
 	}
 
 	/**
 	 * @return the isStudyLifeTime
 	 */
-	public boolean getIsStudyLifeTime() {
+	public Boolean getIsStudyLifeTime() {
 		return isStudyLifeTime;
 	}
 
@@ -116,7 +116,7 @@ public class ActiveTaskFrequencyBo implements Serializable {
 	 * @param isLaunchStudy
 	 *            the isLaunchStudy to set
 	 */
-	public void setIsLaunchStudy(boolean isLaunchStudy) {
+	public void setIsLaunchStudy(Boolean isLaunchStudy) {
 		this.isLaunchStudy = isLaunchStudy;
 	}
 
@@ -124,7 +124,7 @@ public class ActiveTaskFrequencyBo implements Serializable {
 	 * @param isStudyLifeTime
 	 *            the isStudyLifeTime to set
 	 */
-	public void setIsStudyLifeTime(boolean isStudyLifeTime) {
+	public void setIsStudyLifeTime(Boolean isStudyLifeTime) {
 		this.isStudyLifeTime = isStudyLifeTime;
 	}
 

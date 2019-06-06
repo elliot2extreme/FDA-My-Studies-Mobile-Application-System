@@ -68,9 +68,9 @@ public class FormMappingBo implements Serializable {
 	private Integer sequenceNo;
 
 	@Column(name = "active")
-	private boolean active = true;
+	private Boolean active = true;
 
-	public boolean getActive() {
+	public Boolean getActive() {
 		return active;
 	}
 
@@ -90,7 +90,7 @@ public class FormMappingBo implements Serializable {
 		return sequenceNo;
 	}
 
-	public void setActive(boolean active) {
+	public void setActive(Boolean active) {
 		this.active = active;
 	}
 

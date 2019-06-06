@@ -79,7 +79,7 @@ public class UserBO implements Serializable {
 	private boolean credentialsNonExpired;
 
 	@Column(name = "email_changed", columnDefinition = "TINYINT(1)")
-	private boolean emailChanged = false;
+	private Boolean emailChanged = false;
 
 	@Column(name = "status", length = 1)
 	private boolean enabled;
@@ -124,7 +124,7 @@ public class UserBO implements Serializable {
 	private String tokenExpiryDate;
 
 	@Column(name = "token_used")
-	private boolean tokenUsed;
+	private Boolean tokenUsed;
 
 	@Column(name = "email")
 	private String userEmail;
@@ -158,7 +158,7 @@ public class UserBO implements Serializable {
 		return createdOn;
 	}
 
-	public boolean getEmailChanged() {
+	public Boolean getEmailChanged() {
 		return emailChanged;
 	}
 
@@ -228,7 +228,7 @@ public class UserBO implements Serializable {
 	/**
 	 * @return the tokenUsed
 	 */
-	public boolean getTokenUsed() {
+	public Boolean getTokenUsed() {
 		return tokenUsed;
 	}
 
@@ -321,7 +321,7 @@ public class UserBO implements Serializable {
 		this.credentialsNonExpired = credentialsNonExpired;
 	}
 
-	public void setEmailChanged(boolean emailChanged) {
+	public void setEmailChanged(Boolean emailChanged) {
 		this.emailChanged = emailChanged;
 	}
 
@@ -405,7 +405,7 @@ public class UserBO implements Serializable {
 	 * @param tokenUsed
 	 *            the tokenUsed to set
 	 */
-	public void setTokenUsed(boolean tokenUsed) {
+	public void setTokenUsed(Boolean tokenUsed) {
 		this.tokenUsed = tokenUsed;
 	}
 

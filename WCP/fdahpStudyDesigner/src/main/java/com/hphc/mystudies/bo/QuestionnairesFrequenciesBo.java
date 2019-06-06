@@ -58,10 +58,10 @@ public class QuestionnairesFrequenciesBo implements Serializable {
 	private String frequencyTime;
 
 	@Column(name = "is_launch_study")
-	private boolean isLaunchStudy = false;
+	private Boolean isLaunchStudy = false;
 
 	@Column(name = "is_study_life_time")
-	private boolean isStudyLifeTime = false;
+	private Boolean isStudyLifeTime = false;
 
 	public String getFrequencyDate() {
 		return frequencyDate;
@@ -75,11 +75,11 @@ public class QuestionnairesFrequenciesBo implements Serializable {
 		return id;
 	}
 
-	public boolean getIsLaunchStudy() {
+	public Boolean getIsLaunchStudy() {
 		return isLaunchStudy;
 	}
 
-	public boolean getIsStudyLifeTime() {
+	public Boolean getIsStudyLifeTime() {
 		return isStudyLifeTime;
 	}
 
@@ -99,11 +99,11 @@ public class QuestionnairesFrequenciesBo implements Serializable {
 		this.id = id;
 	}
 
-	public void setIsLaunchStudy(boolean isLaunchStudy) {
+	public void setIsLaunchStudy(Boolean isLaunchStudy) {
 		this.isLaunchStudy = isLaunchStudy;
 	}
 
-	public void setIsStudyLifeTime(boolean isStudyLifeTime) {
+	public void setIsStudyLifeTime(Boolean isStudyLifeTime) {
 		this.isStudyLifeTime = isStudyLifeTime;
 	}
 

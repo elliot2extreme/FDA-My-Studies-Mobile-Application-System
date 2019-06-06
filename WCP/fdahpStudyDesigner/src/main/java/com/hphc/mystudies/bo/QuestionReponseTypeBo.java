@@ -49,7 +49,7 @@ public class QuestionReponseTypeBo implements Serializable {
 	private static final long serialVersionUID = 2659206312696342901L;
 
 	@Column(name = "active")
-	private boolean active;
+	private Boolean active;
 
 	@Column(name = "condition_formula")
 	private String conditionFormula;
@@ -112,7 +112,7 @@ public class QuestionReponseTypeBo implements Serializable {
 	private String minValue;
 
 	@Column(name = "multiple_lines")
-	private boolean multipleLines;
+	private Boolean multipleLines;
 
 	@Column(name = "placeholder")
 	private String placeholder;
@@ -141,7 +141,7 @@ public class QuestionReponseTypeBo implements Serializable {
 	private String unit;
 
 	@Column(name = "use_current_location")
-	private boolean useCurrentLocation;
+	private Boolean useCurrentLocation;
 
 	@Column(name = "validation_characters")
 	private String validationCharacters;
@@ -156,9 +156,9 @@ public class QuestionReponseTypeBo implements Serializable {
 	private String validationRegex;
 
 	@Column(name = "vertical")
-	private boolean vertical;
+	private Boolean vertical;
 
-	public boolean getActive() {
+	public Boolean getActive() {
 		return active;
 	}
 
@@ -242,7 +242,7 @@ public class QuestionReponseTypeBo implements Serializable {
 		return minValue;
 	}
 
-	public boolean getMultipleLines() {
+	public Boolean getMultipleLines() {
 		return multipleLines;
 	}
 
@@ -278,7 +278,7 @@ public class QuestionReponseTypeBo implements Serializable {
 		return unit;
 	}
 
-	public boolean getUseCurrentLocation() {
+	public Boolean getUseCurrentLocation() {
 		return useCurrentLocation;
 	}
 
@@ -298,11 +298,11 @@ public class QuestionReponseTypeBo implements Serializable {
 		return validationRegex;
 	}
 
-	public boolean getVertical() {
+	public Boolean getVertical() {
 		return vertical;
 	}
 
-	public void setActive(boolean active) {
+	public void setActive(Boolean active) {
 		this.active = active;
 	}
 
@@ -386,7 +386,7 @@ public class QuestionReponseTypeBo implements Serializable {
 		this.minValue = minValue;
 	}
 
-	public void setMultipleLines(boolean multipleLines) {
+	public void setMultipleLines(Boolean multipleLines) {
 		this.multipleLines = multipleLines;
 	}
 
@@ -422,7 +422,7 @@ public class QuestionReponseTypeBo implements Serializable {
 		this.unit = unit;
 	}
 
-	public void setUseCurrentLocation(boolean useCurrentLocation) {
+	public void setUseCurrentLocation(Boolean useCurrentLocation) {
 		this.useCurrentLocation = useCurrentLocation;
 	}
 
@@ -442,7 +442,7 @@ public class QuestionReponseTypeBo implements Serializable {
 		this.validationRegex = validationRegex;
 	}
 
-	public void setVertical(boolean vertical) {
+	public void setVertical(Boolean vertical) {
 		this.vertical = vertical;
 	}
 

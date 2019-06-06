@@ -49,7 +49,7 @@ public class QuestionResponseSubTypeBo implements Serializable {
 	private static final long serialVersionUID = -7853082585280415082L;
 
 	@Column(name = "active")
-	private boolean active;
+	private Boolean active;
 
 	@Column(name = "description")
 	private String description;
@@ -95,7 +95,7 @@ public class QuestionResponseSubTypeBo implements Serializable {
 	@Column(name = "value")
 	private String value;
 
-	public boolean getActive() {
+	public Boolean getActive() {
 		return active;
 	}
 
@@ -151,7 +151,7 @@ public class QuestionResponseSubTypeBo implements Serializable {
 		return value;
 	}
 
-	public void setActive(boolean active) {
+	public void setActive(Boolean active) {
 		this.active = active;
 	}
 

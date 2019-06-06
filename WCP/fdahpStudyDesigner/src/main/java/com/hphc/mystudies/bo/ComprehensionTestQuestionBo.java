@@ -49,7 +49,7 @@ public class ComprehensionTestQuestionBo implements Serializable {
 	private static final long serialVersionUID = -4092393873968937668L;
 
 	@Column(name = "active")
-	private boolean active = true;
+	private Boolean active = true;
 
 	@Column(name = "created_by")
 	private Integer createdBy;
@@ -78,15 +78,15 @@ public class ComprehensionTestQuestionBo implements Serializable {
 	private Integer sequenceNo;
 
 	@Column(name = "status")
-	private boolean status;
+	private Boolean status;
 
 	@Column(name = "structure_of_correct_ans")
-	private boolean structureOfCorrectAns = true;
+	private Boolean structureOfCorrectAns = true;
 
 	@Column(name = "study_id")
 	private Integer studyId;
 
-	public boolean getActive() {
+	public Boolean getActive() {
 		return active;
 	}
 
@@ -122,11 +122,11 @@ public class ComprehensionTestQuestionBo implements Serializable {
 		return sequenceNo;
 	}
 
-	public boolean getStatus() {
+	public Boolean getStatus() {
 		return status;
 	}
 
-	public boolean getStructureOfCorrectAns() {
+	public Boolean getStructureOfCorrectAns() {
 		return structureOfCorrectAns;
 	}
 
@@ -134,7 +134,7 @@ public class ComprehensionTestQuestionBo implements Serializable {
 		return studyId;
 	}
 
-	public void setActive(boolean active) {
+	public void setActive(Boolean active) {
 		this.active = active;
 	}
 
@@ -170,11 +170,11 @@ public class ComprehensionTestQuestionBo implements Serializable {
 		this.sequenceNo = sequenceNo;
 	}
 
-	public void setStatus(boolean status) {
+	public void setStatus(Boolean status) {
 		this.status = status;
 	}
 
-	public void setStructureOfCorrectAns(boolean structureOfCorrectAns) {
+	public void setStructureOfCorrectAns(Boolean structureOfCorrectAns) {
 		this.structureOfCorrectAns = structureOfCorrectAns;
 	}
 

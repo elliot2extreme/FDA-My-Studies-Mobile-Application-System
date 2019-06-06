@@ -49,7 +49,7 @@ public class QuestionConditionBranchBo implements Serializable {
 	private static final long serialVersionUID = 8189512029031610252L;
 
 	@Column(name = "active")
-	private boolean active;
+	private Boolean active;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -74,7 +74,7 @@ public class QuestionConditionBranchBo implements Serializable {
 	@Column(name = "sequence_no")
 	private Integer sequenceNo;
 
-	public boolean getActive() {
+	public Boolean getActive() {
 		return active;
 	}
 
@@ -106,7 +106,7 @@ public class QuestionConditionBranchBo implements Serializable {
 		return sequenceNo;
 	}
 
-	public void setActive(boolean active) {
+	public void setActive(Boolean active) {
 		this.active = active;
 	}
 

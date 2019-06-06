@@ -61,7 +61,7 @@ public class EligibilityTestBo implements Serializable {
 	}
 
 	@Column(name = "active")
-	private boolean active = true;
+	private Boolean active = true;
 
 	@Column(name = "eligibility_id")
 	private Integer eligibilityId;
@@ -78,10 +78,10 @@ public class EligibilityTestBo implements Serializable {
 	private String responseFormat;
 
 	@Column(name = "response_no_option")
-	private boolean responseNoOption;
+	private Boolean responseNoOption;
 
 	@Column(name = "response_yes_option")
-	private boolean responseYesOption;
+	private Boolean responseYesOption;
 
 	@Column(name = "sequence_no")
 	private Integer sequenceNo;
@@ -90,7 +90,7 @@ public class EligibilityTestBo implements Serializable {
 	private String shortTitle;
 
 	@Column(name = "status")
-	private boolean status = false;
+	private Boolean status = false;
 
 	@Transient
 	private String type;
@@ -99,7 +99,7 @@ public class EligibilityTestBo implements Serializable {
 	@Type(type = "yes_no")
 	private boolean used = false;
 
-	public boolean getActive() {
+	public Boolean getActive() {
 		return active;
 	}
 
@@ -119,11 +119,11 @@ public class EligibilityTestBo implements Serializable {
 		return responseFormat;
 	}
 
-	public boolean getResponseNoOption() {
+	public Boolean getResponseNoOption() {
 		return responseNoOption;
 	}
 
-	public boolean getResponseYesOption() {
+	public Boolean getResponseYesOption() {
 		return responseYesOption;
 	}
 
@@ -135,7 +135,7 @@ public class EligibilityTestBo implements Serializable {
 		return shortTitle;
 	}
 
-	public boolean getStatus() {
+	public Boolean getStatus() {
 		return status;
 	}
 
@@ -150,7 +150,7 @@ public class EligibilityTestBo implements Serializable {
 		return used;
 	}
 
-	public void setActive(boolean active) {
+	public void setActive(Boolean active) {
 		this.active = active;
 	}
 
@@ -170,11 +170,11 @@ public class EligibilityTestBo implements Serializable {
 		this.responseFormat = responseFormat;
 	}
 
-	public void setResponseNoOption(boolean responseNoOption) {
+	public void setResponseNoOption(Boolean responseNoOption) {
 		this.responseNoOption = responseNoOption;
 	}
 
-	public void setResponseYesOption(boolean responseYesOption) {
+	public void setResponseYesOption(Boolean responseYesOption) {
 		this.responseYesOption = responseYesOption;
 	}
 
@@ -186,7 +186,7 @@ public class EligibilityTestBo implements Serializable {
 		this.shortTitle = shortTitle;
 	}
 
-	public void setStatus(boolean status) {
+	public void setStatus(Boolean status) {
 		this.status = status;
 	}
 
