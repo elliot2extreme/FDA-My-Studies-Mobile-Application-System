@@ -10,8 +10,8 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
 		<app.dir.name>fdahpStudyDesigner</app.dir.name>
 		<org.springframework.version>3.2.8.RELEASE</org.springframework.version>
 		<spring.security.version>3.2.3.RELEASE</spring.security.version>
@@ -51,8 +51,8 @@
 				<version>3.8.1</version>
 				<configuration>
 					<!-- <webXml>WEB-INF/web.xml</webXml> -->
-					<source>1.8</source>
-					<target>1.8</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 			<plugin>
