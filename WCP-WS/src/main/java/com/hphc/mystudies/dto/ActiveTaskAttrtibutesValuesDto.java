@@ -63,7 +63,7 @@ public class ActiveTaskAttrtibutesValuesDto implements Serializable {
 
 	@Column(name = "add_to_line_chart")
 	@Type(type = "yes_no")
-	private boolean addToLineChart = false;
+	private Boolean addToLineChart = false;
 
 	@Column(name = "time_range_chart")
 	private String timeRangeChart;
@@ -76,7 +76,7 @@ public class ActiveTaskAttrtibutesValuesDto implements Serializable {
 
 	@Column(name = "use_for_statistic")
 	@Type(type = "yes_no")
-	private boolean useForStatistic = false;
+	private Boolean useForStatistic = false;
 
 	@Column(name = "identifier_name_stat")
 	private String identifierNameStat;
@@ -146,11 +146,11 @@ public class ActiveTaskAttrtibutesValuesDto implements Serializable {
 		this.attributeVal = attributeVal;
 	}
 
-	public boolean isAddToLineChart() {
+	public Boolean isAddToLineChart() {
 		return addToLineChart;
 	}
 
-	public void setAddToLineChart(boolean addToLineChart) {
+	public void setAddToLineChart(Boolean addToLineChart) {
 		this.addToLineChart = addToLineChart;
 	}
 
@@ -178,11 +178,11 @@ public class ActiveTaskAttrtibutesValuesDto implements Serializable {
 		this.titleChat = titleChat;
 	}
 
-	public boolean isUseForStatistic() {
+	public Boolean isUseForStatistic() {
 		return useForStatistic;
 	}
 
-	public void setUseForStatistic(boolean useForStatistic) {
+	public void setUseForStatistic(Boolean useForStatistic) {
 		this.useForStatistic = useForStatistic;
 	}
 

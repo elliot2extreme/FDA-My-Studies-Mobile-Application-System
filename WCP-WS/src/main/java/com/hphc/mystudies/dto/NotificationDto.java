@@ -60,10 +60,10 @@ public class NotificationDto implements Serializable {
 	private String scheduleTime;
 
 	@Column(name = "notification_action", length = 1)
-	private boolean notificationAction;
+	private Boolean notificationAction;
 
 	@Column(name = "notification_sent", length = 1)
-	private boolean notificationSent = false;
+	private Boolean notificationSent = false;
 
 	@Column(name = "notification_type")
 	private String notificationType;
@@ -75,10 +75,10 @@ public class NotificationDto implements Serializable {
 	private String notificationScheduleType;
 
 	@Column(name = "notification_done", length = 1)
-	private boolean notificationDone = false;
+	private Boolean notificationDone = false;
 
 	@Column(name = "notification_status", length = 1)
-	private boolean notificationStatus = false;
+	private Boolean notificationStatus = false;
 
 	@Column(name = "study_version")
 	private Integer studyVersion = 1;
@@ -102,7 +102,7 @@ public class NotificationDto implements Serializable {
 	private Integer resourceId;
 
 	@Column(name = "is_anchor_date", length = 1)
-	private boolean anchorDate = false;
+	private Boolean anchorDate = false;
 
 	@Column(name = "x_days")
 	private Integer xDays;
@@ -147,19 +147,19 @@ public class NotificationDto implements Serializable {
 		this.scheduleTime = scheduleTime;
 	}
 
-	public boolean isNotificationAction() {
+	public Boolean isNotificationAction() {
 		return notificationAction;
 	}
 
-	public void setNotificationAction(boolean notificationAction) {
+	public void setNotificationAction(Boolean notificationAction) {
 		this.notificationAction = notificationAction;
 	}
 
-	public boolean isNotificationSent() {
+	public Boolean isNotificationSent() {
 		return notificationSent;
 	}
 
-	public void setNotificationSent(boolean notificationSent) {
+	public void setNotificationSent(Boolean notificationSent) {
 		this.notificationSent = notificationSent;
 	}
 
@@ -179,19 +179,19 @@ public class NotificationDto implements Serializable {
 		this.notificationScheduleType = notificationScheduleType;
 	}
 
-	public boolean isNotificationDone() {
+	public Boolean isNotificationDone() {
 		return notificationDone;
 	}
 
-	public void setNotificationDone(boolean notificationDone) {
+	public void setNotificationDone(Boolean notificationDone) {
 		this.notificationDone = notificationDone;
 	}
 
-	public boolean isNotificationStatus() {
+	public Boolean isNotificationStatus() {
 		return notificationStatus;
 	}
 
-	public void setNotificationStatus(boolean notificationStatus) {
+	public void setNotificationStatus(Boolean notificationStatus) {
 		this.notificationStatus = notificationStatus;
 	}
 
@@ -251,11 +251,11 @@ public class NotificationDto implements Serializable {
 		this.resourceId = resourceId;
 	}
 
-	public boolean isAnchorDate() {
+	public Boolean isAnchorDate() {
 		return anchorDate;
 	}
 
-	public void setAnchorDate(boolean anchorDate) {
+	public void setAnchorDate(Boolean anchorDate) {
 		this.anchorDate = anchorDate;
 	}
 

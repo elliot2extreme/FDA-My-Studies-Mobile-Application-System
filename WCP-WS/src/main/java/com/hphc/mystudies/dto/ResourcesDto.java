@@ -62,7 +62,7 @@ public class ResourcesDto implements Serializable {
 	private String title;
 
 	@Column(name = "text_or_pdf", length = 1)
-	private boolean textOrPdf;
+	private Boolean textOrPdf;
 
 	@Column(name = "rich_text")
 	private String richText;
@@ -74,7 +74,7 @@ public class ResourcesDto implements Serializable {
 	private String pdfName;
 
 	@Column(name = "resource_visibility", length = 1)
-	private boolean resourceVisibility;
+	private Boolean resourceVisibility;
 
 	@Column(name = "time_period_from_days")
 	private Integer timePeriodFromDays;
@@ -92,13 +92,13 @@ public class ResourcesDto implements Serializable {
 	private String resourceText;
 
 	@Column(name = "action", length = 1)
-	private boolean action;
+	private Boolean action;
 
 	@Column(name = "study_protocol", length = 1)
-	private boolean studyProtocol;
+	private Boolean studyProtocol;
 
 	@Column(name = "status", length = 1)
-	private boolean status;
+	private Boolean status;
 
 	@Column(name = "created_by")
 	private Integer createdBy;
@@ -119,16 +119,16 @@ public class ResourcesDto implements Serializable {
 	private String anchorDate;
 
 	@Column(name = "resource_type", length = 1)
-	private boolean resourceType = false;
+	private Boolean resourceType = false;
 
 	@Column(name = "custom_study_id")
 	private String customStudyId;
 
 	@Column(name = "x_days_sign", length = 1)
-	private boolean xDaysSign = false;
+	private Boolean xDaysSign = false;
 
 	@Column(name = "y_days_sign", length = 1)
-	private boolean yDaysSign = false;
+	private Boolean yDaysSign = false;
 
 	@Column(name = "sequence_no")
 	private Integer sequenceNo;
@@ -160,11 +160,11 @@ public class ResourcesDto implements Serializable {
 		this.title = title;
 	}
 
-	public boolean isTextOrPdf() {
+	public Boolean isTextOrPdf() {
 		return textOrPdf;
 	}
 
-	public void setTextOrPdf(boolean textOrPdf) {
+	public void setTextOrPdf(Boolean textOrPdf) {
 		this.textOrPdf = textOrPdf;
 	}
 
@@ -192,11 +192,11 @@ public class ResourcesDto implements Serializable {
 		this.pdfName = pdfName;
 	}
 
-	public boolean isResourceVisibility() {
+	public Boolean isResourceVisibility() {
 		return resourceVisibility;
 	}
 
-	public void setResourceVisibility(boolean resourceVisibility) {
+	public void setResourceVisibility(Boolean resourceVisibility) {
 		this.resourceVisibility = resourceVisibility;
 	}
 
@@ -240,27 +240,27 @@ public class ResourcesDto implements Serializable {
 		this.resourceText = resourceText;
 	}
 
-	public boolean isAction() {
+	public Boolean isAction() {
 		return action;
 	}
 
-	public void setAction(boolean action) {
+	public void setAction(Boolean action) {
 		this.action = action;
 	}
 
-	public boolean isStudyProtocol() {
+	public Boolean isStudyProtocol() {
 		return studyProtocol;
 	}
 
-	public void setStudyProtocol(boolean studyProtocol) {
+	public void setStudyProtocol(Boolean studyProtocol) {
 		this.studyProtocol = studyProtocol;
 	}
 
-	public boolean isStatus() {
+	public Boolean isStatus() {
 		return status;
 	}
 
-	public void setStatus(boolean status) {
+	public void setStatus(Boolean status) {
 		this.status = status;
 	}
 
@@ -312,11 +312,11 @@ public class ResourcesDto implements Serializable {
 		this.anchorDate = anchorDate;
 	}
 
-	public boolean isResourceType() {
+	public Boolean isResourceType() {
 		return resourceType;
 	}
 
-	public void setResourceType(boolean resourceType) {
+	public void setResourceType(Boolean resourceType) {
 		this.resourceType = resourceType;
 	}
 
@@ -328,19 +328,19 @@ public class ResourcesDto implements Serializable {
 		this.customStudyId = customStudyId;
 	}
 
-	public boolean isxDaysSign() {
+	public Boolean isxDaysSign() {
 		return xDaysSign;
 	}
 
-	public void setxDaysSign(boolean xDaysSign) {
+	public void setxDaysSign(Boolean xDaysSign) {
 		this.xDaysSign = xDaysSign;
 	}
 
-	public boolean isyDaysSign() {
+	public Boolean isyDaysSign() {
 		return yDaysSign;
 	}
 
-	public void setyDaysSign(boolean yDaysSign) {
+	public void setyDaysSign(Boolean yDaysSign) {
 		this.yDaysSign = yDaysSign;
 	}
 

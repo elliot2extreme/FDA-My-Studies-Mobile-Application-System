@@ -157,7 +157,7 @@ public class StudyDto implements Serializable {
 
 	@Column(name = "study_pre_active_flag")
 	@Type(type = "yes_no")
-	private boolean studyPreActiveFlag = false;
+	private Boolean studyPreActiveFlag = false;
 
 	@Column(name = "is_live")
 	private Integer live = 0;
@@ -417,11 +417,11 @@ public class StudyDto implements Serializable {
 		this.studylunchDate = studylunchDate;
 	}
 
-	public boolean isStudyPreActiveFlag() {
+	public Boolean isStudyPreActiveFlag() {
 		return studyPreActiveFlag;
 	}
 
-	public void setStudyPreActiveFlag(boolean studyPreActiveFlag) {
+	public void setStudyPreActiveFlag(Boolean studyPreActiveFlag) {
 		this.studyPreActiveFlag = studyPreActiveFlag;
 	}
 

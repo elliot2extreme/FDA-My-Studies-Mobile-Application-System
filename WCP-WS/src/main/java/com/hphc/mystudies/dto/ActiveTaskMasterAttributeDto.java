@@ -75,7 +75,7 @@ public class ActiveTaskMasterAttributeDto implements Serializable {
 
 	@Column(name = "add_to_dashboard")
 	@Type(type = "yes_no")
-	private boolean addToDashboard = false;
+	private Boolean addToDashboard = false;
 
 	@Column(name = "study_version")
 	private Integer studyVersion = 1;
@@ -136,11 +136,11 @@ public class ActiveTaskMasterAttributeDto implements Serializable {
 		this.attributeDataType = attributeDataType;
 	}
 
-	public boolean isAddToDashboard() {
+	public Boolean isAddToDashboard() {
 		return addToDashboard;
 	}
 
-	public void setAddToDashboard(boolean addToDashboard) {
+	public void setAddToDashboard(Boolean addToDashboard) {
 		this.addToDashboard = addToDashboard;
 	}
 

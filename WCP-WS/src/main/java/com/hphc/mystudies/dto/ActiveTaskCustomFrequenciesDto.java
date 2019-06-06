@@ -64,10 +64,10 @@ public class ActiveTaskCustomFrequenciesDto implements Serializable {
 	private Integer studyVersion = 1;
 	
 	@Column(name = "x_days_sign", length = 1)
-	private boolean xDaysSign = false;
+	private Boolean xDaysSign = false;
 
 	@Column(name = "y_days_sign", length = 1)
-	private boolean yDaysSign = false;
+	private Boolean yDaysSign = false;
 	
 	@Column(name = "time_period_from_days")
 	private Integer timePeriodFromDays;
@@ -123,19 +123,19 @@ public class ActiveTaskCustomFrequenciesDto implements Serializable {
 		this.studyVersion = studyVersion;
 	}
 
-	public boolean isxDaysSign() {
+	public Boolean isxDaysSign() {
 		return xDaysSign;
 	}
 
-	public void setxDaysSign(boolean xDaysSign) {
+	public void setxDaysSign(Boolean xDaysSign) {
 		this.xDaysSign = xDaysSign;
 	}
 
-	public boolean isyDaysSign() {
+	public Boolean isyDaysSign() {
 		return yDaysSign;
 	}
 
-	public void setyDaysSign(boolean yDaysSign) {
+	public void setyDaysSign(Boolean yDaysSign) {
 		this.yDaysSign = yDaysSign;
 	}
 

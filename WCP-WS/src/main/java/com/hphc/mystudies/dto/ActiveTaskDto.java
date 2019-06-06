@@ -116,7 +116,7 @@ public class ActiveTaskDto implements Serializable {
 	private String instruction;
 
 	@Column(name = "action", length = 1)
-	private boolean action = false;
+	private Boolean action = false;
 
 	@Column(name = "version")
 	private Float version = 0f;
@@ -280,11 +280,11 @@ public class ActiveTaskDto implements Serializable {
 		this.instruction = instruction;
 	}
 
-	public boolean isAction() {
+	public Boolean isAction() {
 		return action;
 	}
 
-	public void setAction(boolean action) {
+	public void setAction(Boolean action) {
 		this.action = action;
 	}
 

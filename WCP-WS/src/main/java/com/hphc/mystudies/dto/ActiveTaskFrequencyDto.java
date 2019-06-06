@@ -57,19 +57,19 @@ public class ActiveTaskFrequencyDto implements Serializable {
 	private String frequencyTime;
 
 	@Column(name = "is_launch_study")
-	private boolean isLaunchStudy;
+	private Boolean isLaunchStudy;
 
 	@Column(name = "is_study_life_time")
-	private boolean isStudyLifeTime;
+	private Boolean isStudyLifeTime;
 
 	@Column(name = "study_version")
 	private Integer studyVersion = 1;
 	
 	@Column(name = "x_days_sign", length = 1)
-	private boolean xDaysSign = false;
+	private Boolean xDaysSign = false;
 
 	@Column(name = "y_days_sign", length = 1)
-	private boolean yDaysSign = false;
+	private Boolean yDaysSign = false;
 	
 	@Column(name = "time_period_from_days")
 	private Integer timePeriodFromDays;
@@ -109,19 +109,19 @@ public class ActiveTaskFrequencyDto implements Serializable {
 		this.frequencyTime = frequencyTime;
 	}
 
-	public boolean isLaunchStudy() {
+	public Boolean isLaunchStudy() {
 		return isLaunchStudy;
 	}
 
-	public void setLaunchStudy(boolean isLaunchStudy) {
+	public void setLaunchStudy(Boolean isLaunchStudy) {
 		this.isLaunchStudy = isLaunchStudy;
 	}
 
-	public boolean isStudyLifeTime() {
+	public Boolean isStudyLifeTime() {
 		return isStudyLifeTime;
 	}
 
-	public void setStudyLifeTime(boolean isStudyLifeTime) {
+	public void setStudyLifeTime(Boolean isStudyLifeTime) {
 		this.isStudyLifeTime = isStudyLifeTime;
 	}
 
@@ -133,19 +133,19 @@ public class ActiveTaskFrequencyDto implements Serializable {
 		this.studyVersion = studyVersion;
 	}
 
-	public boolean isxDaysSign() {
+	public Boolean isxDaysSign() {
 		return xDaysSign;
 	}
 
-	public void setxDaysSign(boolean xDaysSign) {
+	public void setxDaysSign(Boolean xDaysSign) {
 		this.xDaysSign = xDaysSign;
 	}
 
-	public boolean isyDaysSign() {
+	public Boolean isyDaysSign() {
 		return yDaysSign;
 	}
 
-	public void setyDaysSign(boolean yDaysSign) {
+	public void setyDaysSign(Boolean yDaysSign) {
 		this.yDaysSign = yDaysSign;
 	}
 
