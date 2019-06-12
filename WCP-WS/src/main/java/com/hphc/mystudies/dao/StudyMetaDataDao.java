@@ -28,7 +28,8 @@ import java.util.StringTokenizer;
 import java.util.TreeMap;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -92,7 +93,7 @@ import com.hphc.mystudies.util.StudyMetaDataUtil;
  */
 public class StudyMetaDataDao {
 
-	private static final Logger LOGGER = Logger.getLogger(StudyMetaDataDao.class);
+	private static final Logger LOGGER = LogManager.getLogger(StudyMetaDataDao.class);
 
 	@SuppressWarnings("unchecked")
 	HashMap<String, String> propMap = StudyMetaDataUtil.getAppProperties();

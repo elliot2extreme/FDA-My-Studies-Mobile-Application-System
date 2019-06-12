@@ -20,7 +20,8 @@ package com.hphc.mystudies.integration;
 
 import java.util.HashMap;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.hphc.mystudies.bean.ConsentDocumentResponse;
 import com.hphc.mystudies.bean.EligibilityConsentResponse;
@@ -41,7 +42,7 @@ import com.hphc.mystudies.util.StudyMetaDataUtil;
  */
 public class StudyMetaDataOrchestration {
 
-	private static final Logger LOGGER = Logger
+	private static final Logger LOGGER = LogManager
 			.getLogger(StudyMetaDataOrchestration.class);
 
 	@SuppressWarnings("unchecked")

@@ -33,8 +33,9 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.apache.log4j.Logger;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.JSONObject;
 
 import com.hphc.mystudies.bean.ActiveTaskActivityMetaDataResponse;
@@ -72,7 +73,7 @@ import com.hphc.mystudies.util.StudyMetaDataUtil;
 @Path("/")
 public class StudyMetaDataService {
 
-	private static final Logger LOGGER = Logger
+	private static final Logger LOGGER = LogManager
 			.getLogger(StudyMetaDataService.class);
 
 	@SuppressWarnings("unchecked")

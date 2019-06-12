@@ -37,7 +37,8 @@ import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.hphc.mystudies.bean.FailureResponse;
 import com.sun.jersey.core.util.Base64;
@@ -50,7 +51,7 @@ import com.sun.jersey.core.util.Base64;
  */
 public class StudyMetaDataUtil {
 
-	private static final Logger LOGGER = Logger
+	private static final Logger LOGGER = LogManager
 			.getLogger(StudyMetaDataUtil.class.getName());
 
 	@SuppressWarnings("rawtypes")

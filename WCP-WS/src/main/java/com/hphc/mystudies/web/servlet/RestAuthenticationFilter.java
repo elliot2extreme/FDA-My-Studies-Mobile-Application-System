@@ -30,7 +30,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.hphc.mystudies.exception.ErrorCodes;
 import com.hphc.mystudies.util.StudyMetaDataConstants;
@@ -43,7 +44,7 @@ import com.hphc.mystudies.util.StudyMetaDataConstants;
  */
 public class RestAuthenticationFilter implements Filter {
 
-	public static final Logger LOGGER = Logger
+	public static final Logger LOGGER = LogManager
 			.getLogger(RestAuthenticationFilter.class);
 	public static final String AUTHENTICATION_HEADER = "Authorization";
 

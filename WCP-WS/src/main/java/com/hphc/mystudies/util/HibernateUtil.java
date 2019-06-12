@@ -21,9 +21,10 @@ package com.hphc.mystudies.util;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 
 /**
  * Provides hibernate configuration details to get session factory.
@@ -33,7 +34,7 @@ import org.hibernate.cfg.AnnotationConfiguration;
  */
 public class HibernateUtil {
 
-	private static Logger logger = Logger.getLogger(HibernateUtil.class);
+	private static Logger logger = LogManager.getLogger(HibernateUtil.class);
 
 	private static SessionFactory sessionFactory = null;
 
@@ -53,12 +54,10 @@ public class HibernateUtil {
 		try {
 			if (sessionFactory == null) {
 				Properties properties = new Properties();
-				properties.load(new FileInputStream(ServletContextHolder
-						.getServletContext().getInitParameter(
-								"property_file_location_path")));
-				sessionFactory = new AnnotationConfiguration()
-						.addProperties(properties)
-						.configure("hibernate.cfg.xml").buildSessionFactory();
+				properties.load(new FileInputStream(
+						ServletContextHolder.getServletContext().getInitParameter("property_file_location_path")));
+				sessionFactory = new Configuration().setProperties(properties).configure("hibernate.cfg.xml")
+						.buildSessionFactory();
 			}
 		} catch (Exception e) {
 			logger.error("HibernateUtil - getSessionFactory() :: ERROR ", e);
