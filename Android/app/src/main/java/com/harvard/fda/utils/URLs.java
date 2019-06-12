@@ -18,9 +18,9 @@ package com.harvard.fda.utils;
 public class URLs {
 
 
-    public static final String BASE_URL_WCP_SERVER = "***REMOVED***";
-    public static final String BASE_URL_REGISTRATION_SERVER = "***REMOVED***";
-    public static final String BASE_URL_RESPONSE_SERVER = "***REMOVED***";
+    public static final String BASE_URL_WCP_SERVER = "Your WCP server URL";
+    public static final String BASE_URL_REGISTRATION_SERVER = "Your Registration server URL";
+    public static final String BASE_URL_RESPONSE_SERVER = "Your Response server URL";
 
 
     /**
